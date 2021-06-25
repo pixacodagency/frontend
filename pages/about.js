@@ -3,7 +3,7 @@ const  About = () => {
 
 			
 		<div>
-			<h1>About</h1>
+			<h1>About Pag</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipis</p>
 		</div>
 
