@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div>
  
-      <h1>PizzaBox.Delivery App Concept</h1>
+      <h2>Get a better UX job</h2>
 
-      <p>We love pizza and pizza loves us in return. The result of this mutual affection and tribute to pizza is our idea for the look and functionality of an application for the popular Domino's Pizza chain. It maintains a clean and extremely minimalist style. This makes the app correspond to the temperament of the creators of the best pizza in the world.</p>
+      <p>The design utilizes an elegant black, because the Mercedes brand is synonymous with classic taste and style. An even simpler interface makes it easy to navigate through the application and ensures it is simple to use.</p>
 
       
     </div>
