@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
-const  About = () => {
+const  Work = () => {
 	return ( 
       <div>
         <Head>
-          <title>PIXACOD | About</title>
+          <title>PIXACOD | Work</title>
           <meta name="keywords" content="PIXACOD"/>
         </Head>
-        <h1>ABOUT PAGE</h1>
+        <h1>Work PAGE</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
@@ -16,4 +16,4 @@ const  About = () => {
 	 );
 }
 
-export default About;
+export default Work;
