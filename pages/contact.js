@@ -4,7 +4,7 @@ const Contact = () => {
 	return ( 
 		<div>
 			<Head>
-			 <title>PIXACOD | Conact</title>
+			 <title>PIXACOD | Contact</title>
 			 <meta name="keywords" content="PIXACOD"/>
 		  </Head>
 			<h1>CONTACT PAGE</h1>
