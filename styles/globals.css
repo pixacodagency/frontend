@@ -1,8 +1,9 @@
 @font-face {
     font-family: "Gilroy";
-    src: url("/public/fonts/Gilroy/gilroy.woff2") format("woff2"), url("/public/fonts/Gilroy/gilroy.woff") format("woff");
+    src: url("/fonts/gilroy.woff2") format("woff2"), url("/fonts/gilroy.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 *,
@@ -42,7 +43,6 @@ h6 {
 }
 
 .container {
-    background-color: red;
     min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
