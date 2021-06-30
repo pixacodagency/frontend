@@ -1,17 +1,20 @@
 .navigation {
-    margin: 10px auto 80px;
-    padding: 10px 0;
+    height: 50px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    border-bottom: 1px solid #ddd;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.navigation a {
-    margin-left: 12px;
-    color: rgb(0, 255, 34);
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
-.navigation .logo {
-    margin-right: auto;
+.navigation ul li a {
+    margin: 5px 15px;
 }

@@ -1,15 +1,22 @@
 import Footer from "./Footer"
 import Navbar from "./Navbar"
+import Header from './Header'
+
+import styles from "../styles/Layout.module.css"
 
 const Layout = ({ children }) => {
   return (
-    <div className="container">
-        <main className="main">
-          <Navbar />
+    <>
+    <Navbar />
+    <div className={styles.container}>
+        <main className={styles.main}>
+          
+             <Header />
           {children}
           <Footer />
         </main>
     </div>
+    </>
   );
 }
  
