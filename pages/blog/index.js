@@ -1,12 +1,9 @@
-import Head from 'next/head'
+import Meta from '../../components/Meta'
 
 const Blog = () => {
 	return (    
 		<div>
-		 	<Head>
-		  	<title>PIXACOD | Blog</title>
-		  	<meta name="keywords" content="PIXACOD"/>
-		  </Head>
+		  <Meta title='Blog | Pixacod' />
 			<h1>All blog post</h1>			
 		</div>
 	);
