@@ -1,14 +1,16 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Meta from '../../../components/Meta'
 
 const article = ({article}) => {
 	return (  
-		<div>
-			<h1>{article.title}</h1>
-			<p>{article.body}</p>
-			<br />
-			<Link href='/'>Go Back</Link>
-		</div>
+			<div>
+				<Meta title={article.title} description={article.excerpt} />
+				<h1>{article.title}</h1>
+				<p>{article.body}</p>
+				<br />
+				<Link href='/'>Go Back</Link>
+			</div>
 	);
 }
 
