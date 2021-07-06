@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import ArticleList from '../components/ArticleList'
 
-export default function Home() {
+
+export default function Home({ articles }) {
   return (
-     
     <div>
       <Head>
       {/*Primary Meta Tags*/}
@@ -27,9 +28,22 @@ export default function Home() {
       <meta name="twitter:description" content="Pixacod is a creative agency specializing in Branding, Digital Marketing, UX/UI Design, Custom Development, & eCommerce."></meta>
       <meta name="twitter:image" content="https://res.cloudinary.com/pixacod-agency/image/upload/v1625495570/website/meta-image_ic13p4.jpg"></meta>
       </Head> 
-      <Link href="/blog/">
+      <h1>Welcome to PIXACOD</h1>
+      <ArticleList articles={articles} />
+      <Link href="/blog/">          
         <a className={styles.btn}>See Blog Listing</a>
       </Link>
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+const articles = await res.json()
+
+  return {
+    props: {
+      articles,
+    },
+  }
 }
