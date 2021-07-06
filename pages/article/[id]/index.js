@@ -3,8 +3,6 @@ import { useRouter } from 'next/router'
 
 const article = ({article}) => {
 	return (  
-		// const router = useRouter
-		// const { id } = router.query
 		<div>
 			<h1>{article.title}</h1>
 			<p>{article.body}</p>
@@ -26,7 +24,6 @@ export const getStaticProps = async (context) => {
 		}
 	}
 }
-
 export const getStaticPaths = async () => {
 	const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
 
@@ -40,6 +37,5 @@ export const getStaticPaths = async () => {
     fallback: false,
   }
 }
-
  
 export default article;
