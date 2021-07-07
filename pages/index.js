@@ -1,16 +1,15 @@
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import ArticleList from '../components/ArticleList'
-
+import Button from '../components/Button'
 
 export default function Home({ articles }) {
   return (
     <div>
       <h1>Welcome to PIXACOD</h1>
       <ArticleList articles={articles} />
-      <Link href="/blog/">          
-        <a className={styles.btn}>See Blog Listing</a>
-      </Link>
+
+      <Button />
     </div>
   )
 }
