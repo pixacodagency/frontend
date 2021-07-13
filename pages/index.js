@@ -6,9 +6,8 @@ import Button from '../components/Button'
 export default function Home({ articles }) {
   return (
     <div>
-      <h1>Welcome to PIXACOD</h1>
+      <h1 className={styles.title}>Welcome to PIXACOD</h1>
       <ArticleList articles={articles} />
-
       <Button />
     </div>
   )
