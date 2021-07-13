@@ -7,6 +7,9 @@ export default function Home({ articles }) {
   return (
     <div>
       <h1 className={styles.title}>Welcome to PIXACOD</h1>
+      <Link href='/posts'>
+        <a>All posts</a>
+      </Link>
       <ArticleList articles={articles} />
       <Button />
     </div>
