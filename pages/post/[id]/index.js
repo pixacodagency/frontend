@@ -9,7 +9,7 @@ const article = ({article}) => {
 				<h1>{article.title}</h1>
 				<p>{article.body}</p>
 				<br />
-				<Link href='/'>Go Back</Link>
+				<Link href='/posts'>Go Back</Link>
 			</div>
 	);
 }
