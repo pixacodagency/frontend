@@ -9,8 +9,8 @@ const Layout = ({ children }) => {
     <>
     <Meta />
     <Navbar />
-    <div className={styles.container}>
-        <main className={styles.main}>      
+    <div className={styles.wrapper}>
+        <main className={styles.content}>      
           <Header />
           {children}
           <Footer />

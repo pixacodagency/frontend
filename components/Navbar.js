@@ -5,7 +5,11 @@ import navStyles from '../styles/Nav.module.css';
 const Navbar = () => {
   return (
     <nav className={navStyles.navigation}>
-      <Image src="https://res.cloudinary.com/pixacod-agency/image/upload/v1625672982/website/logo_hitnt4.png" alt="Image" width={152} height={42}/>
+      <Link href="/">
+        <a>
+       <Image src="https://res.cloudinary.com/pixacod-agency/image/upload/v1625672982/website/logo_hitnt4.png" alt="Image" width={152} height={42}/>
+       </a>
+      </Link>
       <ul>
         <li>
           <Link href="/work"><a>Work</a></Link>

@@ -1,8 +1,196 @@
 .footer {
+    background-color: #080F1E;
+    color: #f8f8fb;
+    margin-top: 244px;
+    padding: 34px 0 52px;
+    position: relative;
+}
+
+.footer:before {
+    background: url('/hero-curve.svg') no-repeat center top;
+    background-size: 101% auto;
+    content: '';
+    height: 100px;
+    left: 0;
+    position: absolute;
+    top: -100px;
+    width: 100%;
+}
+
+.container {
+    clear: both;
+    margin: 0 auto;
+    max-width: 86%;
+    padding: 0 50px;
+    position: relative;
+}
+
+p.heading4 {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    margin-bottom: 55px;
+    padding-bottom: 60px;
+}
+
+.heading4 {
+    font-size: calc(32rem/16);
+    font-weight: 700;
+    letter-spacing: -.4px;
+    line-height: calc(42/32);
+}
+
+.large {
+    font-size: calc(20rem/16);
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 25px;
+    text-transform: none;
+}
+
+.footer p .eyebrow {
+    color: #4461FB;
+}
+
+.eyebrow {
+    font-weight: 600;
+}
+
+.footer p span:not(.eyebow) {
     display: block;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 60px;
-    color: #777;
-    border-top: 1px solid #eaeaea;
+    margin-bottom: 26px;
+    max-width: 990px;
+}
+
+.footer .link {
+    border-color: #4AFFD8;
+}
+
+.link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    font-weight: 600);
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: .0625rem;
+    color: #4AFFD8;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    will-change: transform;
+    -webkit-transition: scaleX .8s cubic-bezier(.694, 0, .335, 1), color .8s cubic-bezier(.694, 0, .335, 1);
+    transition: scaleX .8s cubic-bezier(.694, 0, .335, 1), color .8s cubic-bezier(.694, 0, .335, 1);
+}
+
+.link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    z-index: 2;
+    will-change: transform, color;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.694, 0, .335, 1);
+    transition: transform .6s;
+    transition: transform .6s, -webkit-transform .6s;
+    transition-timing-function: cubic-bezier(.694, 0, .335, 1);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.underline {
+    border-bottom: 2px solid #eaeaea;
+}
+
+.underline span {
+    margin-bottom: 0 !important;
+}
+
+.animation {
+    position: relative;
+    margin-bottom: .0625rem;
+}
+
+.animation aside {
+    display: inline-block !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.underline aside span {
+    margin-bottom: 0 !important;
+    padding-left: .5rem;
+    display: inline-block !important;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.underline aside span:first-child {
+    position: relative;
+}
+
+.underline aside span:nth-child(2) {
+    position: absolute;
+    -webkit-transform: translateX(-150%);
+    transform: translateX(-150%);
+    padding-right: 100%;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s;
+}
+
+.svgIcon {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.125rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (min-width: 45em) {
+    .animation aside {
+        top: 4px;
+    }
+}
+
+@media only screen and (max-width: 68.75em) {
+    .container {
+        max-width: 100% !important;
+    }
+    .footer {
+        margin-top: 106px;
+    }
+    .footer:before {
+        height: 28px;
+        top: -28px;
+    }
+    .heading4 {
+        font-size: calc(22rem/16);
+        line-height: calc(32/22);
+    }
+    .large {
+        font-size: 1rem;
+        line-height: calc(20/16);
+    }
+    .large2 {
+        font-size: calc(22rem/16);
+        line-height: calc(32/22);
+    }
 }
