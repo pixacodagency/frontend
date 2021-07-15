@@ -7,7 +7,7 @@ const Footer = () => {
       <div className={footerStyles.container}>
         <p className={footerStyles.heading4}>
           <span className={`${footerStyles.large} ${footerStyles.eyebrow}`}>we are pixacod agency.</span>
-          <span className={footerStyles.large2}>we’re a digital creative agency specializing in building brands, eCommerce & custom development</span>
+          <span className={footerStyles.large2}>we’re a digital agency specializing in building brands, eCommerce & custom development</span>
           <Link href="/about">
            <a className={`${footerStyles.link} ${footerStyles.underline} ${footerStyles.animation}`}>
             <span>Learn More</span>
@@ -20,6 +20,37 @@ const Footer = () => {
           </a>
           </Link>
         </p>
+        <div className={`${footerStyles.grid} ${footerStyles.information}`}>
+          <div className={footerStyles.column}>
+            <a href="mailto:hello@pixacod.agency">hello@pixacod.agency</a>
+            <address>a collaborative design and development agency, based in the heart of Bosnia</address>
+          </div>
+          <ul className={`${footerStyles.menuFooter} ${footerStyles.footerList}`}>
+            <li className={footerStyles.menuItem}>
+              <Link href="/services"><a>Our Services</a></Link>
+              <ul className={footerStyles.subMenu}>
+                <li className={footerStyles.menuItem}>
+                  <Link href="/services"><a>UX & Product Design</a></Link>
+                </li>
+                 <li className={footerStyles.menuItem}>
+                  <Link href="/services"><a>Branding & Visual Identity</a></Link>
+                </li>
+                <li className={footerStyles.menuItem}>
+                  <Link href="/services"><a>Web Design</a></Link>
+                </li>
+                <li className={footerStyles.menuItem}>
+                  <Link href="/services"><a>WordPress Development</a></Link>
+                </li>
+              </ul>
+            </li>
+            <li className={footerStyles.menuItem}></li>
+            <li className={footerStyles.menuItem}></li>
+          </ul>
+        </div>
+        <div className={`${footerStyles.flexContainer} ${footerStyles.bottomInfo}`}>
+         <p>© 2021 Pixacod Agency - All Rights Reserved. Photography by <a rel="noreferrer" target="_blank" href="https://www.instagram.com/photo.marko.id/">Marko Alilovic, Photographer</a>.</p>
+         <Link href="/terms-of-services"><a>Terms of Service</a></Link>
+        </div>
       </div>
     </footer>
   );
