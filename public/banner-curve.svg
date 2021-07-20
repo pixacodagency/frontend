@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  version="1.1" viewBox="0 0 1440 141" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Top Blue BG</title>
+<defs>
+<path id="a" d="m0 141h818 622c-0.06836-45.77-0.06836-87.77 0-126-170.43-9.6953-386.8-15-622-15-338.84 0-638 11.614-818 30v111z"/>
+</defs>
+<g fill-rule="evenodd">
+<mask fill="white">
+<use xlink:href="#a"/>
+</mask>
+<use transform="translate(720 70.5) scale(1 -1) translate(-720 -70.5)" fill="#080F1E" xlink:href="#a"/>
+</g>
+</svg>

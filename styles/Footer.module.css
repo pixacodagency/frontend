@@ -341,7 +341,6 @@ ul.menuFooter>li>a {
         padding: 0 20px;
     }
     .bottomInfo p {
-        margin-bottom: 25px;
         width: 100%;
     }
 }
@@ -411,6 +410,9 @@ ul.menuFooter>li>a {
     }
     .menuFooter>li {
         margin-bottom: 50px;
+    }
+    .bottomInfo p {
+        margin-bottom: 15px;
     }
 }
 

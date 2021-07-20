@@ -1,20 +1,279 @@
-.navigation {
-    height: 50px;
-    padding: 10px;
-    background: #648ce2;
-    color: #fff;
+.menuDesktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    justify-content: flex-start;
 }
 
-.navigation ul {
-    display: flex;
-    justify-content: center;
+.header {
     align-items: center;
-    list-style: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 10;
 }
 
-.navigation ul li a {
-    margin: 5px 15px;
+.logo {
+    position: relative;
+}
+
+.header .accessibility {
+    backface-visibility: hidden;
+    left: -999999999px;
+    position: absolute;
+}
+
+.navbar {
+    margin-left: 2.5rem;
+    position: relative;
+}
+
+.linkEffect a {
+    overflow: hidden;
+}
+
+.linkEffect a span {
+    position: relative;
+    display: block;
+    -webkit-transition: -webkit-transform .8s var(--transition);
+    transition: -webkit-transform .8s var(--transition);
+    transition: transform .8s var(--transition);
+    transition: transform .8s var(--transition), -webkit-transform .8s var(--transition);
+}
+
+.linkEffect a span:before {
+    position: absolute;
+    top: 100%;
+    display: block;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transition: -webkit-transform 0.8s var(--transition);
+    transition: -webkit-transform 0.8s var(--transition);
+    transition: transform 0.8s var(--transition);
+    transition: transform 0.8s var(--transition), -webkit-transform 0.8s var(--transition);
+}
+
+.linkEffect a:focus span,
+.linkEffect a:hover span {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.navbarItem {
+    position: relative;
+    display: block;
+    margin: .25rem 0;
+}
+
+.menuDesktop {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.menuDesktop .navbarItem {
+    display: inline-block;
+    margin: 0 .25rem;
+}
+
+.menuDesktop .navbarLinkItem,
+.hamburgerText {
+    color: var(--milky-way) !important;
+}
+
+.navbarLinkItem {
+    position: relative;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*   */
+    font-size: calc(1rem*var(--scale-nav-link));
+    padding: 0 .25rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    letter-spacing: .01875rem;
+    font-weight: 500;
+    /* vertical-align: middle; */
+}
+
+.navbarLinkItem span {
+    text-transform: capitalize;
+}
+
+.navbarLinkItem aside {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 .01em 0 0;
+}
+
+.navbarLinkItem:hover span {
+    color: var(--green);
+}
+
+.hamburgerRow {
+    position: fixed;
+    right: var(--padding-mobile);
+    pointer-events: none;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: var(--container);
+}
+
+.hamburgerRow button {
+    padding: 0;
+}
+
+.hamburgerButton {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    cursor: pointer;
+    pointer-events: all;
+    border-radius: 100px;
+    will-change: transform;
+    margin-left: 1.25rem;
+    -webkit-transition: -webkit-transform .6s;
+    transition: transform .6s;
+    transition: transform .6s, -webkit-transform .6s;
+}
+
+.hamburgerButton span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: .375rem 0;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+.hamburgerButton:before {
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    right: -28px;
+    bottom: -28px;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+    -webkit-transition: opacity .5s cubic-bezier(.65, .005, .35, .995), -webkit-transform .4s cubic-bezier(.65, .005, .35, .995);
+    transition: transform .4s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995), -webkit-transform .4s cubic-bezier(.65, .005, .35, .995);
+    background-color: #7c00ff;
+}
+
+.hamburgerButton:hover:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: .2;
+}
+
+.toggleButton {
+    position: relative;
+    display: table;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: unset;
+    will-change: transform;
+    margin-left: auto;
+    padding-right: var(--padding-mobile)!important;
+}
+
+.buttonStyle {
+    border: 0;
+    color: inherit;
+    background: 0 0;
+    line-height: inherit;
+    text-transform: upp;
+    letter-spacing: inherit;
+    font-size: var(--meta);
+    font-weight: var(--bold);
+    letter-spacing: .0625rem;
+    position: relative;
+    overflow: unset;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+
+/* .hamburgerButton span {
+    position: relative;
+    z-index: 1;
+} */
+
+button .hamburgerText {
+    position: relative;
+    z-index: 1;
+}
+
+.hamburgerText {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -5px;
+    color: #000;
+    opacity: .8;
+    text-transform: none;
+    font-weight: var(--medium);
+}
+
+
+/*1100px*/
+
+@media only screen and (max-width: 68.75em) {
+    .header .logo {
+        height: 40px;
+        position: relative;
+        z-index: 9999;
+    }
+}
+
+
+/*1080px*/
+
+@media (min-width: 1080px) {
+    .grid {
+        padding-left: var(--padding-desktop);
+        padding-right: var(--padding-desktop);
+    }
+    .toggleButton {
+        padding-right: var(--padding-desktop)!important;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1079px) {
+    .grid {
+        padding-left: var(--padding-tablet);
+        padding-right: var(--padding-tablet);
+    }
+    .toggleButton {
+        padding-right: var(--padding-tablet)!important;
+    }
+}
+
+
+/*719*/
+
+@media all and (max-width: 719px) {
+    .navbar {
+        display: none;
+    }
 }

@@ -1,9 +1,32 @@
+:root {
+    --green: #4AFFD8;
+    --milky-way: #f8f8fb;
+    --font-family--brand: "Gilroy", sans-serif;
+    --scale-nav-link: 1;
+    --meta: 14px;
+    --medium: 500;
+    --bold: 600;
+    --padding-mobile: 5%;
+    --padding-tablet: 24px;
+    --padding-desktop: 80px;
+    --container: 1600px;
+    --transition: cubic-bezier(0.24, 0.82, 0.43, 1.05);
+}
+
 @font-face {
     font-family: "Gilroy";
     src: url("/fonts/gilroy.woff2") format("woff2"), url("/fonts/gilroy.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+* {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
 *,
@@ -68,10 +91,51 @@ article {
     width: 100%;
 }
 
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
 p,
 ul,
 ol {
     letter-spacing: .5px;
     line-height: calc(26/16);
     margin: 0 0 24px;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.grid {
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
+}
+
+@media (min-width: 1080px) and (max-width: 1199.98px) {
+     :root {
+        --scale-nav-link: 1.1;
+    }
 }

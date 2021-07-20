@@ -1,27 +1,50 @@
-.title a,
-.title span {
-    color: #0070f3;
-    text-decoration: none;
+.hero {
+    background: #fff;
+    overflow: hidden;
+    padding: 270px 0 171px;
+    position: relative;
+    z-index: 2;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-    text-decoration: underline;
+.hero:before {
+    background: #080F1E;
+    content: "";
+    height: calc(100% - 125/1440*100vw + 1px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-.title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
+.curve {
+    bottom: 0;
+    display: block;
+    height: auto;
+    left: 50%;
+    min-width: calc(100vw + 10px);
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
 }
 
-.title,
-.description {
-    text-align: center;
+.curve img {
+    min-width: calc(100vw + 10px);
 }
 
-.description {
-    line-height: 1.5;
-    font-size: 1.5rem;
+
+/*1100px*/
+
+@media only screen and (max-width: 68.75em) {
+    .hero {
+        padding: 60px 0 220px;
+    }
+}
+
+
+/*650*/
+
+@media only screen and (max-width: 40.625em) {
+    .hero {
+        padding: 60px 0 220px;
+    }
 }
