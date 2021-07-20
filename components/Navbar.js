@@ -46,14 +46,30 @@ const Navbar = () => {
       <div className={navStyles.hamburgerRow}>
         <button className={`${navStyles.toggleButton} ${navStyles.buttonStyle}`}>
           <span className={navStyles.hamburgerText}>Menu</span>
-          <span className={`${navStyles.hamburgerButton} ${navStyles.menuToggle} ${navStyles.magnet}`}>
+          <span className={navStyles.hamburgerButton}>
            <span></span>
            <span></span>
           </span>
         </button>
-      </div>     
+      </div> 
+      <div className={navStyles.sidebar}>
+        <div className={navStyles.sidebarWrapper}>
+          <div className={`${navStyles.sidebarWrapperContainer} ${navStyles.navAnimated}`}>
+            <nav className={`${navStyles.sidebarNav} ${navStyles.linkEffect}`}>
+              <Link href="/work">
+                <a className={navStyles.navbarLinkItem}>
+                <aside>
+                  <span data-hover="Work">Work</span>
+                </aside>
+                </a>
+             </Link>
+            </nav>
+          </div>
+        </div>
+        <div className={navStyles.navBg}></div>
+      </div>
     </header>
-);
+    );
 }
  
 export default Navbar;
