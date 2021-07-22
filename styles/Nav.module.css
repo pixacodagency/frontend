@@ -85,8 +85,8 @@
 }
 
 .menuDesktop .navbarLinkItem,
-.hamburgerText {
-    color: var(--milky-way) !important;
+.buttonStyle span {
+    color: var(--white) !important;
 }
 
 .navbarLinkItem {
@@ -118,7 +118,7 @@
 }
 
 .navbarLinkItem:hover span {
-    color: var(--green);
+    color: var(--blue-light);
 }
 
 .hamburgerRow {
@@ -160,7 +160,6 @@
     margin: .375rem 0;
     top: 0;
     z-index: 1;
-    background-color: #fff;
     -webkit-transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
     transition: transform .3s ease-out, -webkit-transform .3s ease-out;
@@ -179,13 +178,28 @@
     transform: scale(.7);
     -webkit-transition: opacity .5s cubic-bezier(.65, .005, .35, .995), -webkit-transform .4s cubic-bezier(.65, .005, .35, .995);
     transition: transform .4s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995), -webkit-transform .4s cubic-bezier(.65, .005, .35, .995);
-    background-color: #7c00ff;
+    background-color: #4461FB;
 }
 
 .hamburgerButton:hover:before {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: .2;
+}
+
+.isOpen {
+    background-color: var(--blue)!important;
+    -webkit-transform: translateY(4px) rotate( 135deg);
+    transform: translateY(4px) rotate( 135deg);
+}
+
+.isOpen:last-child {
+    -webkit-transform: translateY(-4px) rotate( 45deg);
+    transform: translateY(-4px) rotate( 45deg);
+}
+
+.isClosed {
+    background-color: #fff;
 }
 
 .toggleButton {
@@ -228,9 +242,16 @@ button .hamburgerText {
     position: relative;
     top: -5px;
     color: #000;
-    opacity: .8;
     text-transform: none;
     font-weight: var(--medium);
+}
+
+.Opacity {
+    opacity: .8;
+}
+
+.NotOpacity {
+    opacity: 0;
 }
 
 .sidebar {
@@ -272,8 +293,6 @@ button .hamburgerText {
     transition: .5s cubic-bezier(.65, .005, .35, .995);
 }
 
-.sidebarWrapperOpen {}
-
 .sidebarWrapperContainer {
     position: absolute;
     display: -webkit-box;
@@ -298,13 +317,7 @@ button .hamburgerText {
     transition: opacity .2s cubic-bezier(.75, .25, .25, .75), transform .3s cubic-bezier(.75, .25, .25, .75), -webkit-transform .3s cubic-bezier(.75, .25, .25, .75);
 }
 
-.sidebarOpen .sidebarWrapper {
-    width: 100%;
-    -webkit-transition: width .5s cubic-bezier(.4, 0, .1, 1);
-    transition: width .5s cubic-bezier(.4, 0, .1, 1);
-}
-
-.sidebarOpen .navAnimated {
+.navAnimatedOpen {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1;
@@ -320,8 +333,8 @@ button .hamburgerText {
     height: 100%;
     left: 0;
     top: 0;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
 }
 
 .sidebarNav {
@@ -329,16 +342,55 @@ button .hamburgerText {
     margin-bottom: 2.5rem;
 }
 
+.sidebarNav .navbarLinkItem {
+    position: relative;
+    font-size: calc(var(--heading-three)*var(--scale));
+    color: var(--black) !important;
+    padding: 0;
+    margin: 0 0 .5rem;
+    display: block;
+}
+
+.sidebarNav .navbarLinkItem:hover span {
+    color: var(--blue);
+}
+
+.moreLinks {
+    position: relative;
+    border-top: 1px solid var(--grey);
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.moreLinks .navLink {
+    padding: .5rem 0;
+    margin: 0;
+    display: table;
+    color: inherit;
+}
+
+.moreLinks .navLink:hover {
+    color: var(--blue);
+}
+
+.badge {
+    font-size: .875rem;
+    font-weight: var(--bold);
+    display: inline-table;
+    pointer-events: none;
+    position: relative;
+    line-height: 1.5;
+    padding: .125rem .375rem .1875rem;
+    letter-spacing: .0625rem;
+    min-height: 26px;
+    background: var(--yellow);
+    color: var(--black);
+}
+
 
 /*1100px*/
 
-@media only screen and (max-width: 68.75em) {
-    .header .logo {
-        height: 40px;
-        position: relative;
-        z-index: 9999;
-    }
-}
+@media only screen and (max-width: 68.75em) {}
 
 
 /*1080px*/
@@ -374,8 +426,10 @@ button .hamburgerText {
     .sidebarNav .navbarLinkItem {
         font-size: calc(var(--heading-two)*var(--scale));
     }
-    .sidebarWrapper {
+    .sidebarWrapperRwd {
         width: 620px;
+        -webkit-transition: width .5s cubic-bezier(.4, 0, .1, 1);
+        transition: width .5s cubic-bezier(.4, 0, .1, 1);
     }
 }
 
@@ -385,5 +439,8 @@ button .hamburgerText {
 @media all and (max-width: 719px) {
     .navbar {
         display: none;
+    }
+    .sidebarWrapper {
+        width: 100% !important;
     }
 }
