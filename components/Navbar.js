@@ -1,8 +1,14 @@
 import Link from 'next/link';
+import { useState } from 'react'
 import Image from 'next/image';
 import navStyles from '../styles/Nav.module.css';
 
+
 const Navbar = () => {
+
+  const [showSidebar, setShowSidebar] = useState(false);
+
+
   return (
     <header className={`${navStyles.menuDesktop} ${navStyles.header} ${navStyles.grid}`}>
       <Link href="/">
@@ -43,17 +49,17 @@ const Navbar = () => {
         </Link>
         </div>
       </nav>
-      <div className={navStyles.hamburgerRow}>
+      <div className={navStyles.hamburgerRow}>    
         <button className={`${navStyles.toggleButton} ${navStyles.buttonStyle}`}>
           <span className={navStyles.hamburgerText}>Menu</span>
-          <span className={navStyles.hamburgerButton}>
-           <span></span>
-           <span></span>
-          </span>
-        </button>
+            <span className={navStyles.hamburgerButton} onClick={()=> setShowSidebar(!showSidebar)}>
+            <span></span>
+            <span></span>
+          </span>          
+        </button> 
       </div> 
-      <div className={navStyles.sidebar}>
-        <div className={navStyles.sidebarWrapper}>
+      <div className={showSidebar ? navStyles.sidebarVisable : navStyles.sidebar }>
+        <div className={showSidebar ? navStyles.sidebarWrapper : null}>
           <div className={`${navStyles.sidebarWrapperContainer} ${navStyles.navAnimated}`}>
             <nav className={`${navStyles.sidebarNav} ${navStyles.linkEffect}`}>
               <Link href="/work">

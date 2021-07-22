@@ -25,6 +25,11 @@
     position: absolute;
 }
 
+.grid {
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
+}
+
 .navbar {
     margin-left: 2.5rem;
     position: relative;
@@ -242,12 +247,22 @@ button .hamburgerText {
     visibility: hidden;
 }
 
-
-/* .sidebarOpen{} */
+.sidebarVisable {
+    position: fixed;
+    z-index: 1;
+    -webkit-transition: width .5s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995);
+    transition: width .5s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: all !important;
+}
 
 .sidebarWrapper {
     position: fixed;
-    width: 0;
     height: 100%;
     top: 0;
     right: 0;
@@ -256,6 +271,8 @@ button .hamburgerText {
     -webkit-transition: .5s cubic-bezier(.65, .005, .35, .995);
     transition: .5s cubic-bezier(.65, .005, .35, .995);
 }
+
+.sidebarWrapperOpen {}
 
 .sidebarWrapperContainer {
     position: absolute;
@@ -357,7 +374,7 @@ button .hamburgerText {
     .sidebarNav .navbarLinkItem {
         font-size: calc(var(--heading-two)*var(--scale));
     }
-    .sidebarOpen .sidebarWrapper {
+    .sidebarWrapper {
         width: 620px;
     }
 }
