@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { useState } from 'react';
-import React, { useRef } from "react";
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 import navStyles from '../styles/Nav.module.css';
 import useOutsideClick from "../helpers/useOutsideClick";
@@ -12,7 +11,9 @@ const Navbar = () => {
   const sidebarRef = useRef();
 
   useOutsideClick(sidebarRef, () => {
-    alert('You clicked outside')
+    if (showSidebar) {
+      setShowSidebar(false);
+    }
   });
 
   return (
@@ -64,12 +65,12 @@ const Navbar = () => {
           </span>          
         </button> 
       </div>     
-        <div className={showSidebar ? navStyles.sidebarVisable : navStyles.sidebar }>
-          <div className={`${navStyles.sidebarWrapper} ${showSidebar ? navStyles.sidebarWrapperRwd : navStyles.sidebarWrapper}`}>
+        <div  className={showSidebar ? navStyles.sidebarVisable : navStyles.sidebar }>
+          <div ref={sidebarRef} className={`${navStyles.sidebarWrapper} ${showSidebar ? navStyles.sidebarWrapperRwd : navStyles.sidebarWrapper}`}>
             <div className={`${navStyles.sidebarWrapperContainer} ${showSidebar ? navStyles.sidebarWrapperRwd : navStyles.navAnimated}`}>
-              <nav className={`${navStyles.sidebarNav} ${navStyles.linkEffect}`}>
-                <Link href="/work">
-                    <a className={navStyles.navbarLinkItem}>
+              <nav  className={`${navStyles.sidebarNav} ${navStyles.linkEffect}`}>
+                <Link href="/work" >
+                    <a onClick={()=> setShowSidebar(false)} className={navStyles.navbarLinkItem}>
                     <aside>
                       <span data-hover="Work">Work</span>
                     </aside>
@@ -82,7 +83,7 @@ const Navbar = () => {
                     </aside>
                     </a>
                 </Link>
-                <Link href="/service">
+                <Link href="/services">
                     <a className={navStyles.navbarLinkItem}>
                     <aside>
                       <span data-hover="Service">Service</span>
@@ -98,7 +99,7 @@ const Navbar = () => {
                </Link>
               </nav>
               <nav className={navStyles.moreLinks}>
-                <Link href="https://gum.co/bbxFSd">
+                <Link  href="https://gum.co/bbxFSd">
                   <a className={navStyles.navLink} target="_blank">Book a Consulting Session — Pixacod</a>
                 </Link>
                 <Link href="https://www.masterclass.com/">
