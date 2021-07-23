@@ -96,11 +96,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    /*   */
     font-size: calc(1rem*var(--scale-nav-link));
     padding: 0 .25rem;
-    margin-left: .25rem;
-    margin-right: .25rem;
+    margin-left: .35rem;
+    margin-right: .35rem;
     letter-spacing: .01875rem;
     font-weight: 500;
     /* vertical-align: middle; */
@@ -369,7 +368,8 @@ button .hamburgerText {
     color: inherit;
 }
 
-.moreLinks .navLink:hover {
+.moreLinks .navLink:hover,
+.socialNav .navLink:hover {
     color: var(--blue);
 }
 
@@ -385,6 +385,31 @@ button .hamburgerText {
     min-height: 26px;
     background: var(--yellow);
     color: var(--black);
+    margin-left: 0.25rem;
+}
+
+.socialNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--grey);
+    padding-top: 1.5rem;
+}
+
+.socialNav li {
+    width: calc(33.33333% - 16px);
+    margin: .5rem;
+}
+
+.socialNav .navLink {
+    font-weight: var(--medium);
+    font-size: var(--caption);
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: inherit;
 }
 
 

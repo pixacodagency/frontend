@@ -53,7 +53,7 @@ p.heading4 {
 }
 
 .footer p .eyebrow {
-    color: #4461FB;
+    color: #8595e0;
 }
 
 .eyebrow {
@@ -231,7 +231,9 @@ p.heading4 {
 
 .information address {
     font-style: normal;
-    letter-spacing: .8px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .6px;
     line-height: calc(26/16);
     margin: 10px 0;
 }
@@ -239,7 +241,7 @@ p.heading4 {
 .menuFooter {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto !important;
     max-width: 888px;
     width: 100%;
 }
@@ -255,7 +257,7 @@ ul.menuFooter>li>a {
 }
 
 .footerList>li>a {
-    color: #4AFFD8;
+    color: #8595e0;
     font-size: calc(12rem/14);
     display: block;
     letter-spacing: 2px;
@@ -264,6 +266,11 @@ ul.menuFooter>li>a {
 
 .menuFooter li li {
     margin-bottom: 24px;
+}
+
+.menuFooter li.social {
+    display: inline-block;
+    margin-right: 18px;
 }
 
 .menuFooter li li a {
@@ -276,8 +283,6 @@ ul.menuFooter>li>a {
 .menuFooter li li a:hover {
     color: #4AFFD8;
 }
-
-.subMenu {}
 
 
 /*1800px*/

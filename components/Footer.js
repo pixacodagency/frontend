@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import footerStyles from '../styles/Footer.module.css';
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -28,23 +29,63 @@ const Footer = () => {
           <ul className={`${footerStyles.menuFooter} ${footerStyles.footerList}`}>
             <li className={footerStyles.menuItem}>
               <Link href="/services"><a>Our Services</a></Link>
+                <ul className={footerStyles.subMenu}>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/services"><a>UX & Product Design</a></Link>
+                  </li>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/services"><a>Branding & Visual Identity</a></Link>
+                  </li>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/services"><a>Web Design</a></Link>
+                  </li>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/services"><a>WordPress Development</a></Link>
+                  </li>
+                </ul>
+            </li>
+            <li className={footerStyles.menuItem}>
+              <Link href="/about"><a>About us</a></Link>
+                <ul className={footerStyles.subMenu}>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/work"><a>Our Work</a></Link>
+                  </li>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/about"><a>Our Team</a></Link>
+                  </li>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/services"><a>Services</a></Link>
+                  </li>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/contact"><a>Contact Us</a></Link>
+                  </li>
+                </ul>
+            </li>
+            <li className={footerStyles.menuItem}>
+              <Link href="/about"><a>PIXACOD CONTENT</a></Link>
               <ul className={footerStyles.subMenu}>
                 <li className={footerStyles.menuItem}>
-                  <Link href="/services"><a>UX & Product Design</a></Link>
-                </li>
-                 <li className={footerStyles.menuItem}>
-                  <Link href="/services"><a>Branding & Visual Identity</a></Link>
+                  <Link href="/work"><a>Our Work</a></Link>
                 </li>
                 <li className={footerStyles.menuItem}>
-                  <Link href="/services"><a>Web Design</a></Link>
+                  <Link href="/posts"><a>News from the Agency</a></Link>
                 </li>
-                <li className={footerStyles.menuItem}>
-                  <Link href="/services"><a>WordPress Development</a></Link>
+                <li className={`${footerStyles.menuItem} ${footerStyles.social}`}>
+                  <Link href="https://www.instagram.com/pixacod/">
+                    <a target="_blank" rel="noopener">
+                      <Image  src="/facebook.svg" alt="Facebook" height={16} width={16} />
+                    </a>
+                  </Link>
                 </li>
+                <li className={`${footerStyles.menuItem} ${footerStyles.social}`}>
+                <Link href="https://www.instagram.com/pixacod/">
+                  <a target="_blank" rel="noopener">
+                    <Image  src="/instagram.svg" alt="Instagram" height={16} width={16} />
+                  </a>
+                </Link>
+              </li>
               </ul>
             </li>
-            <li className={footerStyles.menuItem}></li>
-            <li className={footerStyles.menuItem}></li>
           </ul>
         </div>
         <div className={`${footerStyles.flexContainer} ${footerStyles.bottomInfo}`}>

@@ -33,20 +33,27 @@ const Navbar = () => {
               </aside>
              </a>
            </Link>
+           <Link href="/services">
+           <a className={navStyles.navbarLinkItem}>
+             <aside>
+               <span data-hover="Services">Services</span>
+             </aside>
+           </a>
+          </Link>
            <Link href="/about">
            <a className={navStyles.navbarLinkItem}>
             <aside>
-              <span data-hover="About">About</span>
+              <span data-hover="Agency">Agency</span>
             </aside>
            </a>
          </Link>
-         <Link href="/services">
+         <Link href="/posts">
           <a className={navStyles.navbarLinkItem}>
             <aside>
-              <span data-hover="Service">Service</span>
+              <span data-hover="Blog">Blog</span>
             </aside>
           </a>
-         </Link>
+        </Link>
          <Link href="/contact">
          <a className={navStyles.navbarLinkItem}>
            <aside>
@@ -72,42 +79,67 @@ const Navbar = () => {
                 <Link href="/work" >
                     <a onClick={()=> setShowSidebar(false)} className={navStyles.navbarLinkItem}>
                     <aside>
-                      <span data-hover="Work">Work</span>
-                    </aside>
-                    </a>
-                </Link>
-                <Link href="/about">
-                    <a className={navStyles.navbarLinkItem}>
-                    <aside>
-                      <span data-hover="About">About</span>
+                      <span data-hover="Our Work">Our Work</span>
                     </aside>
                     </a>
                 </Link>
                 <Link href="/services">
-                    <a className={navStyles.navbarLinkItem}>
+                    <a onClick={()=> setShowSidebar(false)} className={navStyles.navbarLinkItem}>
                     <aside>
                       <span data-hover="Service">Service</span>
                     </aside>
                     </a>
                 </Link>
+                <Link href="/about">
+                    <a onClick={()=> setShowSidebar(false)} className={navStyles.navbarLinkItem}>
+                    <aside>
+                      <span data-hover="Agency">Agency</span>
+                    </aside>
+                    </a>
+                </Link>
+
+                <Link href="/posts">
+                    <a onClick={()=> setShowSidebar(false)} className={navStyles.navbarLinkItem}>
+                    <aside>
+                      <span data-hover="Blog">Blog</span>
+                    </aside>
+                    </a>
+                </Link>
                 <Link href="/contact">
-                <a className={navStyles.navbarLinkItem}>
-                <aside>
-                  <span data-hover="Contact">Contact</span>
-                </aside>
-                </a>
+                  <a onClick={()=> setShowSidebar(false)} className={navStyles.navbarLinkItem}>
+                  <aside>
+                    <span data-hover="Contact">Contact</span>
+                  </aside>
+                  </a>
                </Link>
               </nav>
               <nav className={navStyles.moreLinks}>
                 <Link  href="https://gum.co/bbxFSd">
-                  <a className={navStyles.navLink} target="_blank">Book a Consulting Session — Pixacod</a>
+                  <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink} target="_blank">Our expertise</a>
                 </Link>
                 <Link href="https://www.masterclass.com/">
-                  <a className={navStyles.navLink} target="_blank">Design Masterclass 
-                  <span className={navStyles.badge}>Get early access</span>
+                  <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink} target="_blank">We're hiring 
+                  <span className={navStyles.badge}>Senior UX/UI Designer</span>
                   </a>
                 </Link>
               </nav>
+              <ul className={navStyles.socialNav}>
+                 <li>
+                  <Link href="https://www.instagram.com/pixacod/">
+                    <a className={navStyles.navLink}>Instagram</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://www.instagram.com/pixacod/">
+                    <a className={navStyles.navLink}>Facebook</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://www.instagram.com/pixacod/">
+                    <a className={navStyles.navLink}>Dribbble</a>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
           <div className={showSidebar ? navStyles.navBg : null}></div>
