@@ -1,8 +1,8 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
-import * as ga from '../lib/ga'
-import Layout from '../components/Layout'
-import '../styles/globals.css'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import * as ga from '../lib/ga';
+import Layout from '../components/Layout';
+import '../styles/globals.css';
 
 
 function MyApp({ Component, pageProps }) {

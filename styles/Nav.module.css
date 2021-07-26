@@ -97,9 +97,9 @@
     -ms-user-select: none;
     user-select: none;
     font-size: calc(1rem*var(--scale-nav-link));
-    padding: 0 .25rem;
-    margin-left: .35rem;
-    margin-right: .35rem;
+    padding: 0.25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
     letter-spacing: .01875rem;
     font-weight: 500;
     /* vertical-align: middle; */
@@ -383,7 +383,7 @@ button .hamburgerText {
     padding: .125rem .375rem .1875rem;
     letter-spacing: .0625rem;
     min-height: 26px;
-    background: var(--yellow);
+    background: var(--green);
     color: var(--black);
     margin-left: 0.25rem;
 }

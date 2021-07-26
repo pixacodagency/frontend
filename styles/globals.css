@@ -1,19 +1,23 @@
 :root {
     --purple: #7c00ff;
     --green: #4AFFD8;
+    --accent: #EC4F70;
     --blue: #4461FB;
     --grey: #eaeaea;
+    --milky-way: #f8f8fb;
     --yellow: #fddb60;
     --white: #ffffff;
     --black: #000;
     --blue-light: #8595e0;
-    --font-family--brand: "Gilroy", sans-serif;
     --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --heading-one: 68px;
     --heading-two: 48px;
     --heading-three: 32px;
     --heading-four: 24px;
     --heading-five: 18px;
+    --body-bigger: 24px;
+    --body-medium: 22px;
+    --body: 18px;
     --scale: 1;
     --scale-nav-link: 1.125;
     --meta: 14px;
@@ -99,6 +103,7 @@ h4,
 h5,
 h6 {
     font-family: "Gilroy", Futura, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
 }
 
 header,

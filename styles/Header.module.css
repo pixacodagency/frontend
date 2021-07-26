@@ -31,12 +31,42 @@
     min-width: calc(100vw + 10px);
 }
 
+.container {
+    clear: both;
+    margin: 0 auto;
+    max-width: 86%;
+    padding: 0 50px;
+    position: relative;
+}
+
+.hero h1 {
+    color: var(--milky-way);
+    font-weight: 500;
+    font-size: calc(var(--heading-two)*var(--scale));
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.subhead {
+    color: var(--milky-way);
+    font-size: calc(var(--body-bigger)*var(--scale));
+}
+
 
 /*1100px*/
 
 @media only screen and (max-width: 68.75em) {
     .hero {
         padding: 60px 0 220px;
+    }
+    .container {
+        max-width: 100% !important;
+    }
+    .hero h1 {
+        font-size: calc(52rem/16);
+        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -46,5 +76,17 @@
 @media only screen and (max-width: 40.625em) {
     .hero {
         padding: 60px 0 220px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+}
+
+
+/*720px*/
+
+@media (min-width: 720px) {
+    .subhead {
+        margin-bottom: 2.5rem;
     }
 }

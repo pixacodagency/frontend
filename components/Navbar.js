@@ -114,11 +114,12 @@ const Navbar = () => {
                </Link>
               </nav>
               <nav className={navStyles.moreLinks}>
-                <Link  href="https://gum.co/bbxFSd">
-                  <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink} target="_blank">Our expertise</a>
+                <Link  href="/expertise">
+                  <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink}>Our expertise</a>
                 </Link>
-                <Link href="https://www.masterclass.com/">
-                  <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink} target="_blank">We're hiring 
+                <Link href="/talent">
+                  <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink}>
+                  We're looking for talent 
                   <span className={navStyles.badge}>Senior UX/UI Designer</span>
                   </a>
                 </Link>

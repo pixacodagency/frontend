@@ -1,3 +1,6 @@
 .wrapper {}
 
-.content {}
+.content {
+    overflow: hidden;
+    height: 100%;
+}
