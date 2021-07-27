@@ -17,7 +17,8 @@ const Navbar = () => {
   });
 
   return (
-    <header className={`${navStyles.menuDesktop} ${navStyles.header} ${navStyles.grid}`}>
+    <div className={navStyles.menu}>
+    <header className={`${navStyles.menuDesktop} ${navStyles.header} ${navStyles.grid} ${navStyles.myContainer}`}>
       <Link href="/">
         <a className={navStyles.logo}>
            <span className={navStyles.accessibility}>Pixacod Agency</span>
@@ -146,6 +147,7 @@ const Navbar = () => {
           <div className={showSidebar ? navStyles.navBg : null}></div>
         </div>
     </header>
+    </div>
     );
 }
  

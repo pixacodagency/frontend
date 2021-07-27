@@ -24,6 +24,7 @@
     --medium: 500;
     --bold: 600;
     --caption: 15px;
+    --container: 1600px;
     --padding-mobile: 5%;
     --padding-tablet: 24px;
     --padding-desktop: 80px;
@@ -163,4 +164,9 @@ svg:not(:root) {
      :root {
         --scale-nav-link: 1.1;
     }
+}
+
+.grid {
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
 }

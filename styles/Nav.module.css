@@ -1,18 +1,39 @@
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
 .menuDesktop {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+}
+
+.myContainer {
+    max-width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
-    align-items: center;
+    /* align-items: center;
     left: 0;
     position: absolute;
     top: 0;
-    z-index: 99;
+    z-index: 99; */
 }
 
 .logo {
@@ -421,14 +442,17 @@ button .hamburgerText {
 /*1080px*/
 
 @media (min-width: 1080px) {
+    .toggleButton {
+        padding-right: var(--padding-desktop)!important;
+    }
     .grid {
         padding-left: var(--padding-desktop);
         padding-right: var(--padding-desktop);
     }
-    .toggleButton {
-        padding-right: var(--padding-desktop)!important;
-    }
 }
+
+
+/*480px - 1079*/
 
 @media (min-width: 480px) and (max-width: 1079px) {
     .grid {
