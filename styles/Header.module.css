@@ -82,6 +82,25 @@
     font-size: calc(var(--body-medium)*var(--scale));
 }
 
+.animatedText {
+    width: 450px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: var(--medium);
+}
+
+.commonLabel {
+    position: relative;
+    text-transform: uppercase;
+    pointer-events: none;
+    font-weight: var(--bold);
+    font-size: var(--caption);
+    letter-spacing: 0.063rem;
+    margin-bottom: 1rem;
+    opacity: .8;
+    display: block;
+}
+
 
 /*1100px*/
 

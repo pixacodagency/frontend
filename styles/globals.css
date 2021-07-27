@@ -149,6 +149,10 @@ img {
     vertical-align: middle;
 }
 
+::selection {
+    background: rgba(68, 97, 251, 0.1);
+}
+
 [type=button],
 [type=reset],
 [type=submit],
