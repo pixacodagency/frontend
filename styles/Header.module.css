@@ -82,6 +82,10 @@
     font-size: calc(var(--body-medium)*var(--scale));
 }
 
+.subhead span {
+    text-decoration: underline;
+}
+
 .animatedText {
     width: 450px;
     height: 40px;
@@ -99,6 +103,10 @@
     margin-bottom: 1rem;
     opacity: .8;
     display: block;
+}
+
+.heroLink {
+    border-color: #4AFFD8;
 }
 
 
