@@ -1,3 +1,8 @@
+.grid {
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
+}
+
 .hero {
     background: #fff;
     overflow: hidden;
@@ -142,7 +147,11 @@
         letter-spacing: -.0625rem;
     }
     .subhead {
-        font-size: 1.125rem;
+        font-size: 1rem;
+        line-height: calc(24/16);
+    }
+    .commonLabel {
+        font-size: var(--meta);
     }
 }
 
