@@ -153,6 +153,11 @@ img {
     background: rgba(68, 97, 251, 0.1);
 }
 
+address {
+    font-style: normal;
+    font-size: 1rem;
+}
+
 [type=button],
 [type=reset],
 [type=submit],

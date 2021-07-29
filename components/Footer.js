@@ -34,13 +34,16 @@ const Footer = () => {
                     <Link href="/services"><a>UX & Product Design</a></Link>
                   </li>
                   <li className={footerStyles.menuItem}>
+                    <Link href="/services"><a>Visual & Interaction Design</a></Link>
+                  </li>
+                  <li className={footerStyles.menuItem}>
                     <Link href="/services"><a>Branding & Visual Identity</a></Link>
                   </li>
                   <li className={footerStyles.menuItem}>
-                    <Link href="/services"><a>Web Design</a></Link>
+                    <Link href="/services"><a>Digital Marketing</a></Link>
                   </li>
                   <li className={footerStyles.menuItem}>
-                    <Link href="/services"><a>WordPress Development</a></Link>
+                    <Link href="/services"><a>Development</a></Link>
                   </li>
                 </ul>
             </li>

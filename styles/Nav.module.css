@@ -433,6 +433,12 @@ button .hamburgerText {
     color: inherit;
 }
 
+.telephone {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 /*1100px*/
 
