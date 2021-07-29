@@ -107,6 +107,11 @@ h6 {
     margin: 0;
 }
 
+h3 {
+    font-size: calc(var(--heading-three)*var(--scale));
+    letter-spacing: -.03125rem;
+}
+
 header,
 section,
 footer,

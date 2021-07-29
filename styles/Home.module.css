@@ -7,7 +7,75 @@
     text-decoration: underline;
 }
 
-.title {
-    color: #EC4F70;
-    text-align: center;
+.grid {
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
+}
+
+.container {
+    max-width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blogSection {
+    position: relative;
+    width: 100%;
+}
+
+.News {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+.pageHeader {
+    position: relative;
+    margin-bottom: 2.5rem;
+    z-index: 1;
+    max-width: 800px;
+    display: inline-block;
+}
+
+.bold {
+    font-weight: var(--bold);
+}
+
+
+/*480px*/
+
+@media (min-width: 480px) {
+    .grid {
+        padding-left: var(--padding-tablet);
+        padding-right: var(--padding-tablet);
+    }
+}
+
+
+/*720px*/
+
+@media (min-width: 720px) {}
+
+
+/*1080px*/
+
+@media (min-width: 1080px) {
+    .grid {
+        padding-left: var(--padding-desktop);
+        padding-right: var(--padding-desktop);
+    }
+    .News {
+        padding-top: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .newsHeader {
+        width: 40%;
+    }
+    .blog {
+        width: 60%;
+    }
+    .pageHeader {
+        margin-bottom: 3.75rem;
+    }
 }
