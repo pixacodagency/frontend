@@ -43,7 +43,7 @@ const Footer = () => {
                     <Link href="/services"><a>Digital Marketing</a></Link>
                   </li>
                   <li className={footerStyles.menuItem}>
-                    <Link href="/services"><a>Custom Software Development</a></Link>
+                    <Link href="/services"><a>Development</a></Link>
                   </li>
                 </ul>
             </li>

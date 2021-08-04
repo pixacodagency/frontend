@@ -110,6 +110,10 @@
     display: block;
 }
 
+.commonLabel span {
+    text-transform: lowercase;
+}
+
 .heroLink {
     border-color: #4AFFD8;
 }
