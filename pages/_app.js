@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import * as ga from '../lib/ga';
 import Layout from '../components/Layout';
 import '../styles/globals.css';
+import { AnimatePresence } from "framer-motion";
 
 
 function MyApp({ Component, pageProps }) {
@@ -26,7 +27,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </Layout>
   )
 }

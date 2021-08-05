@@ -4,6 +4,7 @@ import Image from 'next/image';
 import navStyles from '../styles/Nav.module.css';
 import useOutsideClick from "../helpers/useOutsideClick";
 
+
 const Navbar = () => {
 
   const [showSidebar, setShowSidebar] = useState(false);
@@ -68,9 +69,9 @@ const Navbar = () => {
         <button className={`${navStyles.toggleButton} ${navStyles.buttonStyle}`}>
           <span className={`${navStyles.hamburgerText} ${showSidebar ? navStyles.NotOpacity : navStyles.Opacity}`}>Menu</span>
             <span className={navStyles.hamburgerButton} onClick={()=> setShowSidebar(!showSidebar)}>
-            <span className={ showSidebar ? navStyles.isOpen : navStyles.isClosed}></span>
-            <span className={ showSidebar ? navStyles.isOpen : navStyles.isClosed}></span>
-          </span>          
+              <span className={ showSidebar ? navStyles.isOpen : navStyles.isClosed}></span>
+              <span className={ showSidebar ? navStyles.isOpen : navStyles.isClosed}></span>
+            </span>          
         </button> 
       </div>     
         <div  className={showSidebar ? navStyles.sidebarVisable : navStyles.sidebar }>
