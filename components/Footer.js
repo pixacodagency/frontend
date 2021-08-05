@@ -76,14 +76,14 @@ const Footer = () => {
                 <li className={`${footerStyles.menuItem} ${footerStyles.social}`}>
                   <Link href="https://www.instagram.com/pixacod/">
                     <a target="_blank" rel="noopener">
-                      <Image  src="/facebook.svg" alt="Facebook" height={16} width={16} />
+                      <Image  src="/facebook.svg" alt="Facebook" height={20} width={20} />
                     </a>
                   </Link>
                 </li>
                 <li className={`${footerStyles.menuItem} ${footerStyles.social}`}>
                 <Link href="https://www.instagram.com/pixacod/">
                   <a target="_blank" rel="noopener">
-                    <Image  src="/instagram.svg" alt="Instagram" height={16} width={16} />
+                    <Image  src="/instagram.svg" alt="Instagram" height={20} width={20} />
                   </a>
                 </Link>
               </li>
