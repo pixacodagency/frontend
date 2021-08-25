@@ -6,14 +6,6 @@ import Button from '../components/Button'
 export default function Home({ articles }) {
   return (
     <section className={styles.contentWrapper}>
-      <section className={styles.aboutFeature}>
-        <div className={`${styles.grid} ${styles.about}`}>
-          <div className={styles.richText}>
-             <h1>Experiences with impact</h1>
-             <p><span className={styles.leadParagraph}>Pixacod is a creative digital agency building brands, campaigns, and ecommerce experiences delivering commercial success for our partners.</span></p>
-          </div>
-        </div>
-      </section>
       <section className={`${styles.blogSection} ${styles.blogFaature}`}>
         <div className={`${styles.container} ${styles.grid} ${styles.News}`}>
           <div className={styles.newsHeader}>
