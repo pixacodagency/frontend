@@ -23,7 +23,7 @@ const Navbar = () => {
       <Link href="/">
         <a className={navStyles.logo}>
            <span className={navStyles.accessibility}>Pixacod Agency</span>
-           <Image src="https://res.cloudinary.com/pixacod-agency/image/upload/v1626707406/website/logo3_clmmvw.svg" alt="Image" width={164} height={33}/>
+           <Image src="https://res.cloudinary.com/pixacod-agency/image/upload/v1626707406/website/logo3_clmmvw.svg" alt="Pixacod logo" width={164} height={33}/>
        </a>
       </Link>
       <nav className={`${navStyles.navbar} ${navStyles.linkEffect}`}>
