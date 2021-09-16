@@ -30,14 +30,6 @@
     padding-bottom: 3.75rem;
 }
 
-.pageHeader {
-    position: relative;
-    margin-bottom: 2.5rem;
-    z-index: 1;
-    max-width: 800px;
-    display: inline-block;
-}
-
 .bold {
     font-weight: var(--bold);
 }
@@ -81,14 +73,8 @@
         display: -ms-flexbox;
         display: flex;
     }
-    .newsHeader {
-        width: 40%;
-    }
     .blog {
         width: 60%;
-    }
-    .pageHeader {
-        margin-bottom: 3.75rem;
     }
 }
 
