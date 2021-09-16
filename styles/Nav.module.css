@@ -74,7 +74,7 @@
     top: 100%;
     display: block;
     content: attr(data-hover);
-    font-weight: 700;
+    font-weight: var(--bold);
     -webkit-transform-origin: left top;
     transform-origin: left top;
     -webkit-transition: -webkit-transform 0.8s var(--transition);

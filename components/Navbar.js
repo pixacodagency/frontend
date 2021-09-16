@@ -126,13 +126,6 @@ const Navbar = () => {
                   </a>
                 </Link>
               </nav>
-              <nav className={navStyles.moreLinks}>
-                <Link  href="/contact">
-                  <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink}>Headquarters</a>             
-                </Link>
-                <address>Hrvatskih branitelja 48 <br></br>72250 Vitez, Bosnia and Hercegovina</address>
-                <a className={navStyles.telephone} href="tel:+387-(0)-63-091-535">tel:+387-063-091-535</a>
-              </nav>
               <ul className={navStyles.socialNav}>
                  <li>
                   <Link href="https://www.instagram.com/pixacod/">
