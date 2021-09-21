@@ -5,7 +5,7 @@ const PostList = () => {
 	return ( 
 		<div>
 			<Meta title='Blog | Pixacod' />
-			<h1 className={styles.title}>Blog PAGE</h1>
+			<h1 className={styles.title}>This is blog page</h1>
 	 </div>
 			);
 }
