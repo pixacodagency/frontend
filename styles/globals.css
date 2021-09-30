@@ -175,9 +175,9 @@ svg:not(:root) {
 }
 
 @media (min-width: 1080px) and (max-width: 1199.98px) {
-     :root {
+    /* :root {
         --scale-nav-link: 1.1;
-    }
+    } */
 }
 
 .grid {
