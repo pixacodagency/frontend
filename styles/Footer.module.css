@@ -281,7 +281,7 @@ ul.menuFooter>li>a {
 }
 
 .menuFooter li li a:hover {
-    color: #4AFFD8;
+    color: var(--blue-light);
 }
 
 
