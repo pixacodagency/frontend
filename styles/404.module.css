@@ -2,7 +2,118 @@
     text-align: center;
 }
 
+.notFound h1 {
+    color: #080F1E;
+    font-weight: 500;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+}
+
+.notFound p {
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #080F1E;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.HeroError {
+    margin-bottom: 73px;
+    overflow: hidden;
+    padding: 140px 0 127px;
+    position: relative;
+}
+
+.HeroError:before {
+    background: #080F1E;
+    content: "";
+    height: calc(100% - 125/1440*100vw + 1px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.HeroError .curve {
+    bottom: 0;
+    display: block;
+    height: auto;
+    left: 50%;
+    min-width: calc(100vw + 10px);
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+}
+
+.HeroError .curve img {
+    min-width: calc(100vw + 10px);
+}
+
+.display {
+    font-size: calc(var(--heading-two)*var(--scale));
+}
+
+.blueBtn {
+    border: 1px solid #4979FF;
+    padding: 14px 20px;
+    background: #4979FF;
+    border-radius: 1px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+}
+
+.blueBtn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #2a59da;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+}
+
+.blueBtn:hover {
+    color: #FFFFFF;
+    z-index: 1;
+    border-color: #4979FF;
+}
+
+.blueBtn:hover:before {
+    transform: translateX(0);
+}
+
 .notFound a {
-    color: #4979ff;
-    text-decoration: underline;
+    min-width: 265px;
+}
+
+
+/*767px*/
+
+@media (max-width: 767px) {
+    .notFound a {
+        min-width: 200px;
+    }
+}
+
+
+/*1080px*/
+
+@media (min-width: 1080px) {
+    .display {
+        font-size: calc(var(--display)*var(--scale));
+    }
 }
