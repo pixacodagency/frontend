@@ -121,29 +121,37 @@ const Navbar = () => {
                 </Link>
                 <Link href="/talent">
                   <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink}>
-                  We're looking for talent 
-                  <span className={navStyles.badge}>Senior UX/UI Designer</span>
+                  Shop
+                  <div className={navStyles.badge}>Coming soon</div> 
                   </a>
                 </Link>
               </nav>
-              <ul className={navStyles.socialNav}>
-                 <li>
-                  <Link href="https://www.instagram.com/pixacod/">
-                    <a className={navStyles.navLink}>Instagram</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.instagram.com/pixacod/">
-                    <a className={navStyles.navLink}>Facebook</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.instagram.com/pixacod/">
-                    <a className={navStyles.navLink}>Dribbble</a>
-                  </Link>
-                </li>
-              </ul>
-              
+              <div className={navStyles.panel}>
+                <div className={navStyles.left}>
+                  <span className={navStyles.commanLabel}>Mics stuff</span>
+                    <ul className={navStyles.list}>
+                      <li>
+                        <p className={navStyles.h6}>New Business</p>
+                         <a className={navStyles.linkWithUnderline} href="mailto:hello@pixacod.agency">hello@pixacod.agency</a>
+                      </li>
+                    </ul>
+                </div>
+                <div className={navStyles.right}>
+                  <span className={navStyles.commanLabel}>Social media</span>
+                  <ul className={navStyles.socialNav}>            
+                    <li>
+                      <Link href="https://www.instagram.com/pixacod/">
+                        <a className={navStyles.navLink}>Instagram</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.instagram.com/pixacod/">
+                        <a className={navStyles.navLink}>Facebook</a>
+                      </Link>
+                    </li>
+                  </ul> 
+                </div>
+              </div>           
             </div>
           </div>
           <div className={showSidebar ? navStyles.navBg : null}></div>

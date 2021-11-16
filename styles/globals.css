@@ -10,6 +10,7 @@
     --black: #000;
     --blue-light: #8595e0;
     --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --color-white-400: #99a0aa;
     --heading-one: 60px;
     --heading-two: 48px;
     --heading-three: 32px;
@@ -19,6 +20,12 @@
     --body-medium: 22px;
     --body: 18px;
     --display: 80px;
+    --fontWeightLight: 300;
+    --fontWeightRegular: 400;
+    --fontWeightMedium: 500;
+    --LinkUnderline: var(--color-white-400);
+    --rowGapNormal: 8px;
+    --rowGapMedium: 24px;
     --scale: 1;
     --scale-nav-link: 1;
     --meta: 14px;
@@ -26,6 +33,7 @@
     --bold: 600;
     --caption: 15px;
     --container: 1600px;
+    --layoutWidthMax: 100%;
     --padding-mobile: 5%;
     --padding-tablet: 24px;
     --padding-desktop: 80px;

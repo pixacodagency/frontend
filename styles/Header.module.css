@@ -100,10 +100,11 @@
 
 .commonLabel {
     position: relative;
+    color: var(--white);
     text-transform: uppercase;
     pointer-events: none;
-    font-weight: var(--bold);
-    font-size: var(--caption);
+    font-weight: var(--medium);
+    font-size: 1rem;
     letter-spacing: 0.063rem;
     margin-bottom: 1rem;
     opacity: .8;
@@ -140,6 +141,21 @@
     .container {
         padding: 0 20px;
     }
+}
+
+
+/*max 599px*/
+
+@media (max-width: 599px) {
+    .hero h1 {
+        font-size: 1.875rem !important;
+        margin-bottom: 12px;
+    }
+    .subhead {
+        font-size: 1rem !important;
+        margin-bottom: 15px;
+    }
+    .heroLink {}
 }
 
 
