@@ -14,7 +14,7 @@ const Header = () => {
          <div className={headerStyles.sectionContent}>
           <div className={headerStyles.contentWrapper}>
             <div className={headerStyles.animatedText}>
-              <p className={headerStyles.commonLabel}>What do we do? It's simple,</p>
+              <p className={headerStyles.commonLabel}>Branding + Website + eCommerce</p>
             </div>      
             <h1>We build digital experiences that highlight your brand.</h1>
             <p className={headerStyles.subhead}>Pixacod is a team of creatives who <span>design identities</span>, custom-built <span>WordPress</span> and <span>WooCommerce</span> websites, apps and digital experiences for our clients and their customers. </p>

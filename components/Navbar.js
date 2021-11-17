@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { useRef, useState } from 'react';
 import Image from 'next/image';
 import navStyles from '../styles/Nav.module.css';
@@ -10,6 +11,7 @@ const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const sidebarRef = useRef();
+  
 
   useOutsideClick(sidebarRef, () => {
     if (showSidebar) {
@@ -57,11 +59,11 @@ const Navbar = () => {
           </a>
         </Link>
          <Link href="/contact">
-         <a className={navStyles.navbarLinkItem}>
-           <aside>
-             <span data-hover="Contact">Contact</span>
-           </aside>
-         </a>
+          <a className={navStyles.navbarLinkItem}>
+            <aside>
+              <span data-hover="Contact">Contact</span>
+            </aside>
+          </a>
         </Link>
         </div>
       </nav>
@@ -119,7 +121,7 @@ const Navbar = () => {
                 <Link  href="/expertise">
                   <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink}>Our expertise</a>
                 </Link>
-                <Link href="/talent">
+                <Link href="/store">
                   <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink}>
                   Shop
                   <div className={navStyles.badge}>Coming soon</div> 

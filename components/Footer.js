@@ -68,9 +68,6 @@ const Footer = () => {
               <Link href="/about"><a>PIXACOD CONTENT</a></Link>
               <ul className={footerStyles.subMenu}>
                 <li className={footerStyles.menuItem}>
-                  <Link href="/work"><a>Our Work</a></Link>
-                </li>
-                <li className={footerStyles.menuItem}>
                   <Link href="/posts"><a>News from the Agency</a></Link>
                 </li>
                 <li className={`${footerStyles.menuItem} ${footerStyles.social}`}>

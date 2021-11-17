@@ -1,0 +1,70 @@
+.HeroContact {
+    padding-top: 220px;
+    padding-bottom: 174px;
+    position: relative;
+    overflow: hidden;
+}
+
+.HeroContact:before {
+    background: var(--primary-color);
+    content: "";
+    height: calc(100% - 125/1440*100vw + 1px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.HeroContact .curve {
+    bottom: 0;
+    display: block;
+    height: auto;
+    left: 50%;
+    min-width: calc(100vw + 10px);
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+}
+
+.HeroContact .curve img {
+    min-width: calc(100vw + 10px);
+}
+
+.ContactContainer {
+    clear: both;
+    margin: 0 auto;
+    max-width: 86%;
+    padding: 0 50px;
+    position: relative;
+}
+
+.HeroContact article {
+    width: calc(1038/1200*100%);
+}
+
+
+/*1100px*/
+
+@media only screen and (max-width: 68.75em) {
+    .ContactContainer {
+        max-width: 100% !important;
+    }
+}
+
+
+/*1100px*/
+
+@media only screen and (max-width: 68.75em) {
+    .ContactContainer {
+        max-width: 100% !important;
+    }
+}
+
+
+/*650*/
+
+@media only screen and (max-width: 40.625em) {
+    .ContactContainer {
+        padding: 0 20px;
+    }
+}
