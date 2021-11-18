@@ -42,6 +42,8 @@
     width: calc(1038/1200*100%);
 }
 
+.heading3 {}
+
 
 /*1100px*/
 
@@ -66,5 +68,8 @@
 @media only screen and (max-width: 40.625em) {
     .ContactContainer {
         padding: 0 20px;
+    }
+    .HeroContact article {
+        width: 100%;
     }
 }

@@ -35,10 +35,13 @@
     --bold: 600;
     --caption: 15px;
     --container: 1600px;
+    --container-main: 86%;
+    --container-desktop-menu: 86%;
     --layoutWidthMax: 100%;
     --padding-mobile: 5%;
     --padding-tablet: 24px;
     --padding-desktop: 80px;
+    --padding-desktop-menu: 50px;
     --container: 1600px;
     --transition: cubic-bezier(0.24, 0.82, 0.43, 1.05);
     --navDark: var(--black);
