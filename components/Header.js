@@ -14,10 +14,10 @@ const Header = () => {
          <div className={headerStyles.sectionContent}>
           <div className={headerStyles.contentWrapper}>
             <div className={headerStyles.animatedText}>
-              <p className={headerStyles.commonLabel}>Branding + Website + eCommerce</p>
+              <p className={headerStyles.commonLabel}>Branding + Website + eCommerce & MORE+</p>
             </div>      
             <h1>We build digital experiences <i> that highlight your brand.</i> </h1>
-            <p className={headerStyles.subhead}>Pixacod is a team of creatives who <span>design identities</span>, custom-built <span>WordPress</span> and <span>WooCommerce</span> websites, apps and digital experiences for our clients and their customers. </p>
+            <p className={headerStyles.subhead}>We help brands in building beautiful <span>websites,</span> <span>eCommerce experiences</span>, <span>mobile apps</span> and helping them carve their stories through engaging digital product experiences.</p>
             <Link href="/contact">
             <a className={`${footerStyles.link} ${footerStyles.underline} ${footerStyles.animation} ${headerStyles.heroLink}`}>
              <span>Contact us</span>
