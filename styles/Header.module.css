@@ -82,7 +82,7 @@
 
 .hero h1 {
     color: var(--milky-way);
-    font-weight: 500;
+    font-weight: var(--fontWeightMedium);
     font-size: calc(var(--heading-one)*var(--scale));
     max-width: 100%;
     margin-bottom: 1.5rem;

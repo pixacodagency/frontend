@@ -25,6 +25,7 @@
     --fontWeightRegular: 400;
     --fontWeightMedium: 500;
     --fontWeightBold: 700;
+    --fontWeightExtraBold: 800;
     --LinkUnderline: var(--color-white-400);
     --rowGapNormal: 8px;
     --rowGapMedium: 24px;
