@@ -1,7 +1,8 @@
 import Meta from '../../components/Meta'
 import styles from '../../styles/Blog.module.css'
-import Image from 'next/image'
+import Image from 'next/image';
 import bannerPic from '../../public/banner-curve.svg'
+import StrapiClient from '../../lib/strapi-client'
 
 const PostList = () => {
 	return ( 
@@ -18,12 +19,13 @@ const PostList = () => {
 			  </section>
 				<section className={styles.BlogContainer}>
 					<ul className={styles.grid}>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li>
+						
+						</li>
 					</ul>				
 				</section>
 			</>
 	);
 }
+
  export default PostList;
