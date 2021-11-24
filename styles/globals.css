@@ -24,6 +24,7 @@
     --fontWeightLight: 300;
     --fontWeightRegular: 400;
     --fontWeightMedium: 500;
+    --fontWeightSemibold: 600;
     --fontWeightBold: 700;
     --fontWeightExtraBold: 800;
     --LinkUnderline: var(--color-white-400);

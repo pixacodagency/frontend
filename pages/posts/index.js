@@ -17,7 +17,11 @@ const PostList = () => {
 					</div>
 			  </section>
 				<section className={styles.BlogContainer}>
-				
+					<ul className={styles.grid}>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>				
 				</section>
 			</>
 	);
