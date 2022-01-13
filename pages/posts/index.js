@@ -2,6 +2,7 @@ import Meta from '../../components/Meta'
 import styles from '../../styles/Blog.module.css'
 import Image from 'next/image';
 import bannerPic from '../../public/banner-curve.svg'
+import StrapiClient from '../../lib/strapi-client'
 
 const PostList = () => {
 	return ( 
@@ -16,7 +17,12 @@ const PostList = () => {
 					  <p>News from Pixacod Agency</p>
 					</div>
 			  </section>
-				<section className={styles.BlogContainer}>		
+				<section className={styles.BlogContainer}>
+					<ul className={styles.grid}>
+						<li>
+						
+						</li>
+					</ul>				
 				</section>
 			</>
 	);
