@@ -13,7 +13,7 @@ const Contact = () => {
 					</div>
 				  <div className={styles.ContactContainer}>
 						 <article>
-							<h1 className={styles.heading3}>Let’s start a project together.</h1>
+							<h1 className={styles.heading3}>Let’s start a project together. Lorem</h1>
 						</article>
 					</div>		
 			</section>
