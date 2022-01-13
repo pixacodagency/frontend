@@ -1,8 +1,3 @@
-.grid {
-    padding-left: var(--padding-mobile);
-    padding-right: var(--padding-mobile);
-}
-
 .hero {
     background: #fff;
     overflow: hidden;
@@ -39,16 +34,28 @@
 }
 
 .hero {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
 }
 
 .heroContainer {
     margin: 0 auto;
     width: 100%;
-    max-width: var(--container);
+    max-width: var(--container-main);
     margin-left: auto;
     margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
     position: relative;
+}
+
+.heroContainer.homeBannerImg {
+    background-image: url(../public/pixacod-hero.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-bottom: 104px;
+    padding-top: 135px;
+    background-attachment: fixed;
+    background-position: 50% 0;
 }
 
 .sectionContent {
@@ -70,16 +77,20 @@
 }
 
 .contentWrapper {
-    max-width: 650px;
+    max-width: 700px;
 }
 
 .hero h1 {
     color: var(--milky-way);
-    font-weight: 500;
+    font-weight: var(--fontWeightMedium);
     font-size: calc(var(--heading-one)*var(--scale));
     max-width: 100%;
     margin-bottom: 1.5rem;
     line-height: 1.1;
+}
+
+.hero i {
+    font-style: normal !important;
 }
 
 .subhead {
@@ -100,10 +111,11 @@
 
 .commonLabel {
     position: relative;
+    color: var(--white);
     text-transform: uppercase;
     pointer-events: none;
-    font-weight: var(--bold);
-    font-size: var(--caption);
+    font-weight: var(--medium);
+    font-size: 0.875rem;
     letter-spacing: 0.063rem;
     margin-bottom: 1rem;
     opacity: .8;
@@ -122,10 +134,8 @@
 /*1100px*/
 
 @media only screen and (max-width: 68.75em) {
-    /* .hero {
-        padding: 60px 0 220px;
-    } */
-    .container {
+    .container,
+    .heroContainer {
         max-width: 100% !important;
     }
 }
@@ -134,11 +144,26 @@
 /*650*/
 
 @media only screen and (max-width: 40.625em) {
-    /* .hero {
-        padding: 60px 0 220px;
-    } */
-    .container {
+    .container,
+    .heroContainer {
         padding: 0 20px;
+    }
+}
+
+
+/*max 599px*/
+
+@media (max-width: 599px) {
+    .hero h1 {
+        font-size: 2rem !important;
+        margin-bottom: 12px;
+    }
+    .hero i {
+        display: block;
+    }
+    .subhead {
+        font-size: 1rem !important;
+        margin-bottom: 15px;
     }
 }
 
@@ -160,6 +185,19 @@
 }
 
 
+/*max 767px*/
+
+@media screen and (max-width: 767px) {
+    .heroContainer.homeBannerImg {
+        background-position: top center;
+        background-repeat: no-repeat;
+        padding-bottom: 0;
+        padding-top: 100px;
+        background-size: contain;
+    }
+}
+
+
 /*720px*/
 
 @media (min-width: 720px) {
@@ -176,12 +214,20 @@
 }
 
 
-/*480px - 1079*/
+/*720px - 1079*/
 
-@media (min-width: 480px) and (max-width: 1079px) {
-    .grid {
-        padding-left: var(--padding-tablet);
-        padding-right: var(--padding-tablet);
+@media (min-width: 720px) and (max-width: 1079px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+
+/*768px - 980*/
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .heroContainer.homeBannerImg {
+        background-size: contain;
     }
 }
 
@@ -191,9 +237,5 @@
 @media (min-width: 1080px) {
     .hero {
         height: calc(100vh - 90px);
-    }
-    .grid {
-        padding-left: var(--padding-desktop);
-        padding-right: var(--padding-desktop);
     }
 }

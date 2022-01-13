@@ -63,7 +63,7 @@ p.heading4 {
 .footer p span:not(.eyebow) {
     display: block;
     margin-bottom: 25px;
-    max-width: 960px;
+    max-width: 900px;
 }
 
 .footer .link {

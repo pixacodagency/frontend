@@ -11,7 +11,7 @@
     margin-right: auto;
 }
 
-
+.callWork
 /*480px*/
 
 @media (min-width: 480px) {
@@ -43,15 +43,6 @@
     .grid {
         padding-left: var(--padding-desktop);
         padding-right: var(--padding-desktop);
-    }
-    .News {
-        padding-top: 5rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .blog {
-        width: 60%;
     }
 }
 

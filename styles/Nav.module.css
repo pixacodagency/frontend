@@ -23,17 +23,10 @@
 }
 
 .myContainer {
-    max-width: var(--container);
+    max-width: var(--container-desktop-menu);
     margin-left: auto;
     margin-right: auto;
-}
-
-.header {
-    /* align-items: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    z-index: 99; */
+    padding: 0 50px;
 }
 
 .logo {
@@ -44,11 +37,6 @@
     backface-visibility: hidden;
     left: -999999999px;
     position: absolute;
-}
-
-.grid {
-    padding-left: var(--padding-mobile);
-    padding-right: var(--padding-mobile);
 }
 
 .navbar {
@@ -143,13 +131,12 @@
 
 .hamburgerRow {
     position: fixed;
-    right: var(--padding-mobile);
     pointer-events: none;
     z-index: 99;
     left: 0;
     right: 0;
     margin: 0 auto;
-    max-width: var(--container);
+    max-width: var(--container-main);
 }
 
 .hamburgerRow button {
@@ -378,8 +365,9 @@ button .hamburgerText {
 .moreLinks {
     position: relative;
     border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
     margin-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding: 1.5rem 0 1.5rem;
 }
 
 .moreLinks .navLink {
@@ -396,7 +384,8 @@ button .hamburgerText {
 
 .badge {
     font-size: .875rem;
-    font-weight: var(--bold);
+    font-weight: var(--fontWeightMedium);
+    border-radius: 4px;
     display: inline-table;
     pointer-events: none;
     position: relative;
@@ -409,28 +398,55 @@ button .hamburgerText {
     margin-left: 0.25rem;
 }
 
-.socialNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    border-top: 1px solid var(--grey);
-    padding-top: 1.5rem;
-}
-
-.socialNav li {
-    width: calc(33.33333% - 16px);
-    margin: .5rem;
+.right .socialNav {
+    margin-left: -8px;
 }
 
 .socialNav .navLink {
-    font-weight: var(--medium);
-    font-size: var(--caption);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+    color: var(--black);
+    outline: none;
+    display: table;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    z-index: 2;
+    overflow: hidden;
+    padding: 8px;
+    position: relative;
+}
+
+.commanLabel {
+    letter-spacing: .5px;
+    font-weight: var(--fontWeightRegular);
+    font-size: .9375rem;
+    text-transform: none;
+    opacity: .7;
+    margin-bottom: var(--rowGapMedium);
+    position: relative;
+    pointer-events: none;
     display: block;
-    padding: 0;
-    margin: 0;
-    color: inherit;
+}
+
+.panel {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 40%;
+    padding-left: 10%;
 }
 
 .telephone {
@@ -439,10 +455,93 @@ button .hamburgerText {
     font-weight: 400;
 }
 
+.left .h6 {
+    color: var(--black);
+    font-size: 0.875rem;
+    letter-spacing: -.3px;
+    font-weight: var(--fontWeightRegular);
+    margin-bottom: 0;
+}
+
+.linkWithUnderline {
+    color: var(--black);
+    border-bottom: 2px solid var(--LinkUnderline);
+    font-size: 1rem;
+    padding-top: var(--rowGapNormal)!important;
+    font-weight: var(--fontWeightMedium);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    font-weight: var(--bold);
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    will-change: transform;
+    -webkit-transition: scaleX .8s cubic-bezier(.694, 0, .335, 1), color .8s cubic-bezier(.694, 0, .335, 1);
+    -o-transition: scaleX .8s cubic-bezier(.694, 0, .335, 1), color .8s cubic-bezier(.694, 0, .335, 1);
+    transition: scaleX .8s cubic-bezier(.694, 0, .335, 1), color .8s cubic-bezier(.694, 0, .335, 1);
+}
+
+.linkWithUnderline:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    z-index: 2;
+    will-change: transform, color;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.694, 0, .335, 1);
+    transition: transform .6s;
+    -o-transition: transform .6s cubic-bezier(.694, 0, .335, 1);
+    transition: transform .6s, -webkit-transform .6s;
+    transition-timing-function: cubic-bezier(.694, 0, .335, 1);
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.linkWithUnderline:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
 
 /*1100px*/
 
-@media only screen and (max-width: 68.75em) {}
+@media only screen and (max-width: 68.75em) {
+    .myContainer {
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 1281px) {
+    .left .h6 {
+        font-size: 1rem;
+    }
+}
 
 
 /*1080px*/
@@ -451,22 +550,19 @@ button .hamburgerText {
     .toggleButton {
         padding-right: var(--padding-desktop)!important;
     }
-    .grid {
-        padding-left: var(--padding-desktop);
-        padding-right: var(--padding-desktop);
-    }
 }
 
 
 /*480px - 1079*/
 
-@media (min-width: 480px) and (max-width: 1079px) {
-    .grid {
-        padding-left: var(--padding-tablet);
-        padding-right: var(--padding-tablet);
+@media (min-width: 480px) and (max-width: 1079px) {}
+
+@media (min-width: 700px) and (max-width:776px) {
+    .navbar {
+        margin-left: 0;
     }
     .toggleButton {
-        padding-right: var(--padding-tablet)!important;
+        padding-right: 0 !important;
     }
 }
 
@@ -497,5 +593,15 @@ button .hamburgerText {
     }
     .sidebarWrapper {
         width: 100% !important;
+    }
+}
+
+
+/*650 - 40.625em*/
+
+@media only screen and (max-width: 40.625em) {
+    .myContainer {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

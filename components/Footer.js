@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={footerStyles.container}>
         <p className={footerStyles.heading4}>
           <span className={`${footerStyles.large} ${footerStyles.eyebrow}`}>we are pixacod agency.</span>
-          <span className={footerStyles.large2}>we’re a digital agency specializing in building brands, eCommerce & custom development</span>
+          <span className={footerStyles.large2}>we’re a mix of designers, developers, and brand strategists based in Vitez.</span>
           <Link href="/about">
            <a className={`${footerStyles.link} ${footerStyles.underline} ${footerStyles.animation}`}>
             <span>Learn More</span>
@@ -67,9 +67,6 @@ const Footer = () => {
             <li className={footerStyles.menuItem}>
               <Link href="/about"><a>PIXACOD CONTENT</a></Link>
               <ul className={footerStyles.subMenu}>
-                <li className={footerStyles.menuItem}>
-                  <Link href="/work"><a>Our Work</a></Link>
-                </li>
                 <li className={footerStyles.menuItem}>
                   <Link href="/posts"><a>News from the Agency</a></Link>
                 </li>

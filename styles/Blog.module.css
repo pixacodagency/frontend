@@ -1,4 +1,93 @@
-.title {
-    color: rgb(47, 50, 255);
-    text-align: center;
+.HeroBlog {
+    padding: 235px 0 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.HeroBlog:before {
+    background: var(--primary-color);
+    content: "";
+    height: calc(100% - 125/1440*100vw + 1px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.HeroBlog .curve {
+    bottom: 0;
+    display: block;
+    height: auto;
+    left: 50%;
+    min-width: calc(100vw + 10px);
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+}
+
+.HeroBlog .curve img {
+    min-width: calc(100vw + 10px);
+}
+
+.BlogContainer,
+.container {
+    clear: both;
+    margin: 0 auto;
+    max-width: 86%;
+    padding: 0 50px;
+    position: relative;
+}
+
+.HeroBlog p {
+    color: var(--milky-way);
+    margin: 0;
+    max-width: calc(887/1200*100%);
+}
+
+.HeroBlog h1 {
+    color: #8595e0;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    font-size: calc(72rem/16);
+    font-weight: var(--fontWeightMedium);
+    margin: 0;
+    letter-spacing: -.45px;
+    line-height: calc(94/72);
+}
+
+.large p {
+    font-size: calc(20rem/16);
+    letter-spacing: .2px;
+    line-height: calc(34/20);
+    margin-bottom: 34px;
+}
+
+.grid {
+    display: grid;
+}
+
+.BlogContainer .grid {
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*1100px*/
+
+@media only screen and (max-width: 68.75em) {
+    .BlogContainer {
+        max-width: 100% !important;
+    }
+}
+
+
+/*650*/
+
+@media only screen and (max-width: 40.625em) {
+    .BlogContainer {
+        padding: 0 20px;
+    }
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { useRef, useState } from 'react';
 import Image from 'next/image';
 import navStyles from '../styles/Nav.module.css';
@@ -10,6 +11,7 @@ const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const sidebarRef = useRef();
+  
 
   useOutsideClick(sidebarRef, () => {
     if (showSidebar) {
@@ -57,11 +59,11 @@ const Navbar = () => {
           </a>
         </Link>
          <Link href="/contact">
-         <a className={navStyles.navbarLinkItem}>
-           <aside>
-             <span data-hover="Contact">Contact</span>
-           </aside>
-         </a>
+          <a className={navStyles.navbarLinkItem}>
+            <aside>
+              <span data-hover="Contact">Contact</span>
+            </aside>
+          </a>
         </Link>
         </div>
       </nav>
@@ -119,31 +121,39 @@ const Navbar = () => {
                 <Link  href="/expertise">
                   <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink}>Our expertise</a>
                 </Link>
-                <Link href="/talent">
+                <Link href="/store">
                   <a onClick={()=> setShowSidebar(false)} className={navStyles.navLink}>
-                  We're looking for talent 
-                  <span className={navStyles.badge}>Senior UX/UI Designer</span>
+                  Shop
+                  <div className={navStyles.badge}>Coming soon</div> 
                   </a>
                 </Link>
               </nav>
-              <ul className={navStyles.socialNav}>
-                 <li>
-                  <Link href="https://www.instagram.com/pixacod/">
-                    <a className={navStyles.navLink}>Instagram</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.instagram.com/pixacod/">
-                    <a className={navStyles.navLink}>Facebook</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.instagram.com/pixacod/">
-                    <a className={navStyles.navLink}>Dribbble</a>
-                  </Link>
-                </li>
-              </ul>
-              
+              <div className={navStyles.panel}>
+                <div className={navStyles.left}>
+                  <span className={navStyles.commanLabel}>Mics stuff</span>
+                    <ul className={navStyles.list}>
+                      <li>
+                        <p className={navStyles.h6}>New Business</p>
+                         <a className={navStyles.linkWithUnderline} href="mailto:hello@pixacod.agency">hello@pixacod.agency</a>
+                      </li>
+                    </ul>
+                </div>
+                <div className={navStyles.right}>
+                  <span className={navStyles.commanLabel}>Social media</span>
+                  <ul className={navStyles.socialNav}>            
+                    <li>
+                      <Link href="https://www.instagram.com/pixacod/">
+                        <a className={navStyles.navLink}>Instagram</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.instagram.com/pixacod/">
+                        <a className={navStyles.navLink}>Facebook</a>
+                      </Link>
+                    </li>
+                  </ul> 
+                </div>
+              </div>           
             </div>
           </div>
           <div className={showSidebar ? navStyles.navBg : null}></div>

@@ -1,13 +1,25 @@
 import Meta from '../../components/Meta'
 import styles from '../../styles/Blog.module.css'
+import Image from 'next/image';
+import bannerPic from '../../public/banner-curve.svg'
 
 const PostList = () => {
 	return ( 
-		<div>
-			<Meta title='Blog | Pixacod' />
-			<h1 className={styles.title}>This is blog page</h1>
-	 </div>
-			);
+			<>
+				<Meta title='Blog | Pixacod' />
+			  <section className={styles.HeroBlog}>
+					<div className={styles.curve}>
+						<Image  src={bannerPic} alt="Banner" height={141} width={1440} />
+					</div>
+					<div className={`${styles.container} ${styles.large}`}>	
+					  <h1>from the pixacod</h1>			  
+					  <p>News from Pixacod Agency</p>
+					</div>
+			  </section>
+				<section className={styles.BlogContainer}>		
+				</section>
+			</>
+	);
 }
- 
-export default PostList;
+
+ export default PostList;

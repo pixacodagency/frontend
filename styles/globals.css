@@ -8,8 +8,10 @@
     --yellow: #fddb60;
     --white: #ffffff;
     --black: #000;
+    --primary-color: #080F1E;
     --blue-light: #8595e0;
     --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --color-white-400: #99a0aa;
     --heading-one: 60px;
     --heading-two: 48px;
     --heading-three: 32px;
@@ -19,6 +21,15 @@
     --body-medium: 22px;
     --body: 18px;
     --display: 80px;
+    --fontWeightLight: 300;
+    --fontWeightRegular: 400;
+    --fontWeightMedium: 500;
+    --fontWeightSemibold: 600;
+    --fontWeightBold: 700;
+    --fontWeightExtraBold: 800;
+    --LinkUnderline: var(--color-white-400);
+    --rowGapNormal: 8px;
+    --rowGapMedium: 24px;
     --scale: 1;
     --scale-nav-link: 1;
     --meta: 14px;
@@ -26,11 +37,16 @@
     --bold: 600;
     --caption: 15px;
     --container: 1600px;
+    --container-main: 86%;
+    --container-desktop-menu: 86%;
+    --layoutWidthMax: 100%;
     --padding-mobile: 5%;
     --padding-tablet: 24px;
     --padding-desktop: 80px;
+    --padding-desktop-menu: 50px;
     --container: 1600px;
     --transition: cubic-bezier(0.24, 0.82, 0.43, 1.05);
+    --navDark: var(--black);
 }
 
 @font-face {
@@ -175,11 +191,7 @@ svg:not(:root) {
     overflow: hidden;
 }
 
-@media (min-width: 1080px) and (max-width: 1199.98px) {
-    /* :root {
-        --scale-nav-link: 1.1;
-    } */
-}
+@media (min-width: 1080px) and (max-width: 1199.98px) {}
 
 .grid {
     padding-left: var(--padding-mobile);
