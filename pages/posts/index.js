@@ -2,7 +2,6 @@ import Meta from '../../components/Meta'
 import styles from '../../styles/Blog.module.css'
 import Image from 'next/image';
 import bannerPic from '../../public/banner-curve.svg'
-import StrapiClient from '../../lib/strapi-client'
 
 const PostList = () => {
 	return ( 
