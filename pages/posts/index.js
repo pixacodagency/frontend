@@ -2,10 +2,8 @@ import Meta from '../../components/Meta'
 import styles from '../../styles/Blog.module.css'
 import Image from 'next/image';
 import bannerPic from '../../public/banner-curve.svg'
-import StrapiClient from '../../lib/strapi-client'
-import PostCard from '../../components/PostCard'
 
-const PostList = ({ postList }) => {
+const PostList = () => {
 	return ( 
 			<>
 				<Meta title='Blog | Pixacod' />
@@ -18,28 +16,10 @@ const PostList = ({ postList }) => {
 					  <p>News from Pixacod Agency</p>
 					</div>
 			  </section>
-				<section className={styles.BlogContainer}>
-					<ul className={styles.grid}>
-						<li>
-							{postList.map((post) =>(
-								<PostCard post={post} key={post.id} />
-							))}
-						</li>
-					</ul>				
+				<section className={styles.BlogContainer}>		
 				</section>
 			</>
 	);
-}
-
-const client = new StrapiClient();
-
-export const getStaticProps = async () =>{
-	  const allPosts = await client.fetchData('/posts');
-		return{
-			props: {
-				postList: allPosts
-			}
-		}
 }
 
  export default PostList;
