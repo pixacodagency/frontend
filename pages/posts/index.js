@@ -13,13 +13,13 @@ const PostList = () => {
 					</div>
 					<div className={`${styles.container} ${styles.large}`}>	
 					  <h1>from the pixacod</h1>			  
-					  <p>News from Pixacod Agency</p>
+					  <p>Articles, News, Tips, Help and Some Rambling.</p>
 					</div>
 			  </section>
 				<section className={styles.BlogContainer}>
 					<ul className={styles.grid}>
-						<li>
-						
+						<h1>All posts</h1>
+						<li className={styles.postCard}>
 						</li>
 					</ul>				
 				</section>
@@ -28,3 +28,7 @@ const PostList = () => {
 }
 
  export default PostList;
+
+ 
+
+ 

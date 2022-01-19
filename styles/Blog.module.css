@@ -74,6 +74,24 @@
     padding: 0;
 }
 
+.postCard {
+    height: min-content;
+    padding-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.postCard::before {
+    box-shadow: 0 30px 60px rgb(0 0 0 / 8%);
+    content: '';
+    height: calc(100% - 26px);
+    left: 0;
+    position: absolute;
+    transition: .2s var(--default-timing-function);
+    width: 100%;
+    z-index: -1;
+}
+
 
 /*1100px*/
 

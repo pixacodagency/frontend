@@ -54,7 +54,7 @@ const Navbar = () => {
          <Link href="/posts">
           <a className={navStyles.navbarLinkItem}>
             <aside>
-              <span data-hover="Articles">Articles</span>
+              <span data-hover="Articles">Blog</span>
             </aside>
           </a>
         </Link>
