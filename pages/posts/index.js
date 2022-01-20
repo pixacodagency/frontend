@@ -1,9 +1,12 @@
+import React from "react";
+import axios from 'axios';
 import Meta from '../../components/Meta'
 import styles from '../../styles/Blog.module.css'
 import Image from 'next/image';
 import bannerPic from '../../public/banner-curve.svg'
+import AllPosts from "../../components/AllPosts";
 
-const PostList = () => {
+const PostList = ({ posts }) => {
 	return ( 
 			<>
 				<Meta title='Blog | Pixacod' />
@@ -17,17 +20,26 @@ const PostList = () => {
 					</div>
 			  </section>
 				<section className={styles.BlogContainer}>
-					<ul className={styles.grid}>
-						<h1>All posts</h1>
-						<li className={styles.postCard}>
-						</li>
-					</ul>				
+						<h1>Naslov</h1>		
+						<AllPosts posts={posts} />				
 				</section>
 			</>
 	);
 }
 
  export default PostList;
+
+
+ export async function getStaticProps(){
+  const postsRes = await axios.get("http://localhost:1337/posts");
+
+  return{
+    props:{
+      posts: postsRes.data
+    },
+  };
+}
+
 
  
 

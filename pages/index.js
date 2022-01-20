@@ -9,16 +9,21 @@ export default function Home({ posts }) {
     <>
       <Header />
        <section className={styles.contentWrapper}>
-          <HomeLatestPosts posts={posts} />
-          <Link href="/posts">
-            <a>Read more posts</a>
-          </Link>
+          <section className={styles.threePostColumn}>
+            <div className={styles.SectionContainer}>
+              <h1>Latest posts</h1>
+              <HomeLatestPosts posts={posts} />
+              <Link href="/posts">
+                <a>Read more posts</a>
+              </Link>
+            </div>
+          </section>
       </section>
     </>
   );
 }
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
   const postsRes = await axios.get("http://localhost:1337/posts");
   
   return{

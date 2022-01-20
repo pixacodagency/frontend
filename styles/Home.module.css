@@ -11,6 +11,14 @@
     margin-right: auto;
 }
 
+.SectionContainer {
+    clear: both;
+    margin: 0 auto;
+    max-width: 86%;
+    padding: 0 50px;
+    position: relative;
+}
+
 .callWork
 /*480px*/
 

@@ -1,0 +1,12 @@
+.postPreview {
+    height: min-content;
+    padding-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.postCategory,
+.postDate {
+    display: inline-block;
+    margin-right: 0.5rem;
+}

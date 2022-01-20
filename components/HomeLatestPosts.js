@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import PostPreview from '../components/PostPreview';
 
 const HomeLatestPosts = ({ posts }) => {
+	
+	// Učitavanje posljednja 3 posta
 	const [latestPosts, setLatestPosts] = useState([]);
 	
 	useEffect(() => {
@@ -16,7 +18,6 @@ const HomeLatestPosts = ({ posts }) => {
 
 	return ( 
 		<>
-			<h2>Latest posts</h2>
 			{renderPostPreviews()}
 		</>
 	 );
@@ -24,12 +25,3 @@ const HomeLatestPosts = ({ posts }) => {
  
 export default HomeLatestPosts;
 
-export async function getServerSideProps(){
-  const postsRes = await axios.get("http://localhost:1337/posts");
-  
-  return{
-    props:{
-      posts: postsRes.data
-    },
-  };
-}
