@@ -26,7 +26,7 @@ const PostPreview = ({post}) => {
 
 	return (
 			<div className={PostPreviewStyle.postPreview}>
-				<span className={PostPreviewStyle.postCategory}>{tags}</span>
+			  <span className={PostPreviewStyle.postCategory}>{tags}</span>
 				<span className={PostPreviewStyle.postDate}>{post.Date}</span>	
 				<h3>{post.Title}</h3>
 			</div>
