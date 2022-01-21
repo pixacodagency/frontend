@@ -8,15 +8,19 @@ export default function Home({ posts }) {
   return (
     <>
       <Header />
-       <section className={styles.contentWrapper}>
-          <section className={styles.threePostColumn}>
-            <div className={styles.SectionContainer}>
-              <h1>Latest posts</h1>
-              <HomeLatestPosts posts={posts} />
-              <Link href="/posts">
-                <a>Read more posts</a>
-              </Link>
-            </div>
+        <section className={styles.featuredBlogPost}>
+          <section className={styles.BlogsContent}>
+              <section className={styles.ThreePostColumn}>
+                <div className={styles.SectionContainer}>
+                  <h1>Latest posts</h1>   
+                  <div className={styles.grid}>
+                    <HomeLatestPosts posts={posts} />                
+                  </div>           
+                  <Link href="/posts">
+                    <a>Read more posts</a>
+                  </Link>
+                </div>
+              </section>
           </section>
       </section>
     </>

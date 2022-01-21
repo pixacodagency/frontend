@@ -1,4 +1,18 @@
-.contentWrapper {}
+.featuredBlogPost {}
+
+.BlogsContent {
+    padding-top: var(--rowGapXLarge);
+    padding-bottom: var(--rowGapXLarge);
+}
+
+.ThreePostColumn .grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .grid {
     padding-left: var(--padding-mobile);
@@ -19,7 +33,7 @@
     position: relative;
 }
 
-.callWork
+
 /*480px*/
 
 @media (min-width: 480px) {
@@ -37,7 +51,12 @@
 
 /*768px*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .BlogsContent {
+        padding-top: var(--rowGapXXLarge);
+        padding-bottom: var(--rowGapXXLarge);
+    }
+}
 
 
 /*1024 - 1439px*/
@@ -51,6 +70,16 @@
     .grid {
         padding-left: var(--padding-desktop);
         padding-right: var(--padding-desktop);
+    }
+}
+
+
+/*1280px*/
+
+@media (min-width: 1280px) {
+    .BlogsContent {
+        padding-top: var(--rowGapXXXXLarge);
+        padding-bottom: var(--rowGapXXXXLarge);
     }
 }
 

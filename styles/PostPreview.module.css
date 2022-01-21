@@ -10,3 +10,33 @@
     display: inline-block;
     margin-right: 0.5rem;
 }
+
+.blogAuthor {
+    display: flex;
+    align-items: center;
+    margin: 24px 0 0;
+}
+
+.blogAuthorProfile {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #4affd8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-right: 12px;
+}
+
+.blogAuthorProfile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.blogAuthorBox {}
+
+.blogAuthorName {
+    display: block;
+    font-weight: 600;
+}

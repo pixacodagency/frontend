@@ -47,6 +47,13 @@
     --container: 1600px;
     --transition: cubic-bezier(0.24, 0.82, 0.43, 1.05);
     --navDark: var(--black);
+    --rowGapNormal: 8px;
+    --rowGapMedium: 24px;
+    --rowGapLarge: 40px;
+    --rowGapXLarge: 60px;
+    --rowGapXXLarge: 80px;
+    --rowGapXXXLarge: 120px;
+    --rowGapXXXXLarge: 160px;
 }
 
 @font-face {
