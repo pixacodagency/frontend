@@ -1,10 +1,10 @@
 import React from "react";
 import Link from 'next/link';
 import axios from 'axios';
-import Meta from '../../components/Meta'
-import styles from '../../styles/Blog.module.css'
+import Meta from '../../components/Meta';
+import styles from '../../styles/Blog.module.css';
 import Image from 'next/image';
-import bannerPic from '../../public/banner-curve.svg'
+import bannerPic from '../../public/banner-curve.svg';
 import AllPosts from "../../components/AllPosts";
 
 const PostList = ({ posts }) => {
