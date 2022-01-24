@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 import axios from 'axios';
 import Meta from '../../components/Meta'
 import styles from '../../styles/Blog.module.css'
@@ -19,9 +20,16 @@ const PostList = ({ posts }) => {
 					  <p>Articles, News, Tips, Help and Some Rambling.</p>
 					</div>
 			  </section>
-				<section className={styles.BlogContainer}>
-						<h1>Naslov</h1>		
-						<AllPosts posts={posts} />				
+				<section className={styles.featuredAllPost}>
+					<section className={styles.BlogContainer}>
+							<h1>Naslov</h1>		
+							<div className={styles.grid}>
+								<AllPosts posts={posts} />	
+						  </div>
+							<Link href="/">
+								<a>Back To Home</a>
+						</Link>
+					</section>			
 				</section>
 			</>
 	);

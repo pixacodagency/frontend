@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 import axios from 'axios';
 import styles from '../styles/Home.module.css';
 import Header from '../components/Header';

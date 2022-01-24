@@ -11,7 +11,6 @@ const AllPosts = ({ posts }) => {
 
 	return ( 
 		<>
-			<h2>Posts</h2>
 			{renderPostPreviews()}
 		</>
 	 );
