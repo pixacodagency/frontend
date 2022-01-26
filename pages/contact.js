@@ -8,14 +8,9 @@ const Contact = () => {
 	 <>
 			<Meta title='Contact | Pixacod' />
 			<section className={styles.HeroContact}>	
-					<div className={styles.curve}>
-						<Image  src={bannerPic} alt="Banner" height={141} width={1440} />
-					</div>
-				  <div className={styles.ContactContainer}>
-						 <article>
-							<h1 className={styles.heading3}>Let’s start a project together. Lorem</h1>
-						</article>
-					</div>		
+					<div className={styles.ContactContainer}></div>
+					<div className={styles.bannerBg}></div>	
+					<div className={styles.curve}></div>						
 			</section>
 	 </>
 	);

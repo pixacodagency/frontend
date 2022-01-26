@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={footerStyles.container}>
         <p className={footerStyles.heading4}>
           <span className={`${footerStyles.large} ${footerStyles.eyebrow}`}>we are pixacod agency.</span>
-          <span className={footerStyles.large2}>we’re a mix of designers, developers, and brand strategists based in Vitez.</span>
+          <span className={footerStyles.large2}>Creatively led. Results driven. <br></br> Experts at what we do. We make it happen.</span>
           <Link href="/about">
            <a className={`${footerStyles.link} ${footerStyles.underline} ${footerStyles.animation}`}>
             <span>Learn More</span>
@@ -45,6 +45,9 @@ const Footer = () => {
                   <li className={footerStyles.menuItem}>
                     <Link href="/services"><a>Development</a></Link>
                   </li>
+                  <li className={footerStyles.menuItem}>
+                    <Link href="/services"><a>Website Support & Maintenance</a></Link>
+                </li>
                 </ul>
             </li>
             <li className={footerStyles.menuItem}>

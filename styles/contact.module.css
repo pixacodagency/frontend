@@ -1,33 +1,24 @@
 .HeroContact {
-    padding-top: 220px;
-    padding-bottom: 174px;
     position: relative;
-    overflow: hidden;
+    height: 24rem;
+    background-size: cover;
+    background-color: #080F1E;
+    text-align: center;
 }
 
-.HeroContact:before {
-    background: var(--primary-color);
-    content: "";
-    height: calc(100% - 125/1440*100vw + 1px);
-    left: 0;
+.HeroContact .bannerBg {
     position: absolute;
     top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-}
-
-.HeroContact .curve {
-    bottom: 0;
-    display: block;
-    height: auto;
-    left: 50%;
-    min-width: calc(100vw + 10px);
-    position: absolute;
-    transform: translateX(-50%);
-    width: 100vw;
-}
-
-.HeroContact .curve img {
-    min-width: calc(100vw + 10px);
+    background-image: url(../public/pixacod-faces.png);
+    background-size: cover;
+    background-position: 50%;
+    -webkit-animation: fadeIn 1.2s;
+    animation: fadeIn 1.2s;
+    -webkit-animation-timing-function: cubic-bezier(.25, .46, .45, .94);
+    animation-timing-function: cubic-bezier(.25, .46, .45, .94);
 }
 
 .ContactContainer {
@@ -38,38 +29,43 @@
     position: relative;
 }
 
-.HeroContact article {
-    width: calc(1038/1200*100%);
+.curve {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 180%;
+    margin-left: -40%;
+    border-radius: 50%;
+    box-shadow: 0 100px 0 #fff;
+    -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+    animation-timing-function: cubic-bezier(.39, .575, .565, 1);
 }
 
-.heading3 {}
 
+/*1200px*/
 
-/*1100px*/
-
-@media only screen and (max-width: 68.75em) {
-    .ContactContainer {
-        max-width: 100% !important;
+@media (min-width: 1200px) {
+    .curve {
+        height: 1000px;
+        -webkit-animation: curve-load-animation-xl .8s;
+        animation: curve-load-animation-xl .8s;
     }
 }
 
 
 /*1100px*/
 
-@media only screen and (max-width: 68.75em) {
+@media only screen and (max-width: 1100px) {
     .ContactContainer {
         max-width: 100% !important;
     }
 }
 
 
-/*650*/
+/*650px*/
 
-@media only screen and (max-width: 40.625em) {
+@media only screen and (max-width: 650px) {
     .ContactContainer {
         padding: 0 20px;
-    }
-    .HeroContact article {
-        width: 100%;
     }
 }

@@ -1,0 +1,40 @@
+.container {
+    clear: both;
+    margin: 0 auto;
+    max-width: 86%;
+    padding: 0 50px;
+    position: relative;
+}
+
+.PostHero {
+    position: relative;
+    overflow: hidden;
+}
+
+.darkHero {
+    color: var(--milky-way);
+    padding-top: 190px;
+    position: relative;
+}
+
+.darkHero::before {
+    background: var(--midnight);
+    content: '';
+    height: calc(100% - 212px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.darkHero .article {
+    width: calc(918/1200*100%);
+}
+
+.darkHero .authorIntro {
+    display: block;
+    font: 500 1rem/calc(22/16);
+    letter-spacing: .4px;
+    margin-bottom: 26px;
+    position: relative;
+}

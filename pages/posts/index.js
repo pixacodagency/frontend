@@ -27,7 +27,7 @@ const PostList = ({ posts }) => {
 								<AllPosts posts={posts} />	
 						  </div>
 							<Link href="/">
-								<a>Back To Home</a>
+								<a>Go Back</a>
 						</Link>
 					</section>			
 				</section>

@@ -10,6 +10,7 @@
     --black: #000;
     --primary-color: #080F1E;
     --blue-light: #8595e0;
+    --midnight: #080F1E;
     --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --color-white-400: #99a0aa;
     --heading-one: 60px;
@@ -198,9 +199,9 @@ svg:not(:root) {
     overflow: hidden;
 }
 
-@media (min-width: 1080px) and (max-width: 1199.98px) {}
-
 .grid {
     padding-left: var(--padding-mobile);
     padding-right: var(--padding-mobile);
 }
+
+@media (min-width: 1080px) and (max-width: 1199.98px) {}

@@ -3,12 +3,13 @@ import axios from 'axios';
 import styles from '../styles/Home.module.css';
 import Header from '../components/Header';
 import HomeLatestPosts from '../components/HomeLatestPosts';
+import WorkCallout from '../components/WorkCallout';
 
 export default function Home({ posts }) {
   return (
     <>
       <Header />
-        <section className={styles.featuredBlogPost}>
+      <section className={styles.featuredBlogPost}>
           <section className={styles.BlogsContent}>
               <section className={styles.ThreePostColumn}>
                 <div className={styles.SectionContainer}>
@@ -22,6 +23,9 @@ export default function Home({ posts }) {
                 </div>
               </section>
           </section>
+      </section>
+      <section>
+        <WorkCallout />
       </section>
     </>
   );
