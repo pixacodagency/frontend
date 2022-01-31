@@ -1,16 +1,20 @@
 import styles from '../styles/404.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import bannerPic from '../public/banner-curve.svg'
 
 const NotFoundPage = () => {
 
 	return (  
 		<>
-			<section className={styles.HeroError}>	
-				<div className={styles.curve}>
-					<Image  src={bannerPic} alt="Banner" height={141} width={1440} />
-				</div>
+			<section className={styles.HeroError}>
+			  <div className={styles.BannerContainer}>
+					<article className={styles.HeaderContent}>
+						<div className={styles.Headline}>
+							<h1 className={styles.heading2}>uh oh, page not found</h1>
+						</div>
+					</article>	
+				</div>	
+				<div className={styles.curve}></div>
 			</section>
 			<div className={styles.errorContainer}>
 				<div className={styles.notFound}>		 

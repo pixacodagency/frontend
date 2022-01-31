@@ -6,6 +6,151 @@
     width: 100%;
 }
 
+.BannerContainer {
+    clear: both;
+    margin: 0 auto;
+    max-width: 86%;
+    padding: 0 50px;
+    position: relative;
+}
+
+.HeroError {
+    position: relative;
+    height: 24rem;
+    background-size: cover;
+    background-color: #080F1E;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.curve {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 180%;
+    margin-left: -40%;
+    border-radius: 50%;
+    box-shadow: 0 100px 0 #fff;
+    -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+    animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+}
+
+.HeroError .HeaderContent {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 2;
+    position: relative;
+    padding-top: 10rem;
+}
+
+.Headline {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+}
+
+.HeroError .heading2 {
+    color: var(--blue-light);
+    font-size: calc(60rem/16);
+    font-weight: 500;
+    letter-spacing: -.7px;
+    line-height: calc(70/60);
+}
+
+
+/*650px*/
+
+@media (max-width: 650px) {
+    .BannerContainer {
+        padding: 0 20px;
+    }
+}
+
+
+/*1100px*/
+
+@media (max-width: 1100px) {
+    .BannerContainer {
+        max-width: 100% !important;
+    }
+    .HeroError .heading2 {
+        font-size: calc(30rem/16);
+        line-height: calc(40/32);
+    }
+}
+
+
+/*1201px*/
+
+@media (min-width: 1201px) {
+    .curve {
+        height: 1000px;
+        -webkit-animation: curve-load-animation-xl .8s;
+        animation: curve-load-animation-xl .8s;
+    }
+}
+
+
+/*769px - 1200px*/
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .HeroError {
+        height: 21rem;
+    }
+    .curve {
+        height: 700px;
+        -webkit-animation: curve-load-animation-lg .8s;
+        animation: curve-load-animation-lg .8s;
+    }
+    .HeroError .HeaderContent {
+        padding-top: 10rem;
+    }
+}
+
+
+/*545px - 768px*/
+
+@media (min-width: 545px) and (max-width: 768px) {
+    .HeroError {
+        height: 20rem;
+    }
+    .curve {
+        height: 500px;
+        -webkit-animation: curve-load-animation-lg .8s;
+        animation: curve-load-animation-lg .8s;
+    }
+    .HeroError .HeaderContent {
+        padding-top: 10rem;
+    }
+}
+
+
+/*544px*/
+
+@media only screen and (max-width: 544px) {
+    .HeroError {
+        height: 19rem;
+    }
+    .curve {
+        height: 400px;
+        -webkit-animation: curve-load-animation-lg .8s;
+        animation: curve-load-animation-lg .8s;
+    }
+    .HeroError .HeaderContent {
+        padding-top: 9.5rem;
+    }
+}
+
 .notFound {
     text-align: center;
 }
@@ -25,38 +170,6 @@
     color: #080F1E;
     max-width: 500px;
     margin: 20px auto;
-}
-
-.HeroError {
-    margin-bottom: 73px;
-    overflow: hidden;
-    padding: 140px 0 127px;
-    position: relative;
-}
-
-.HeroError:before {
-    background: #080F1E;
-    content: "";
-    height: calc(100% - 125/1440*100vw + 1px);
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.HeroError .curve {
-    bottom: 0;
-    display: block;
-    height: auto;
-    left: 50%;
-    min-width: calc(100vw + 10px);
-    position: absolute;
-    transform: translateX(-50%);
-    width: 100vw;
-}
-
-.HeroError .curve img {
-    min-width: calc(100vw + 10px);
 }
 
 .display {
@@ -112,10 +225,6 @@
 /*max 599px*/
 
 @media (max-width: 599px) {
-    .HeroError {
-        padding: 100px 0 80px;
-        margin-bottom: 25px;
-    }
     .notFound p {
         font-size: 1rem;
     }

@@ -1,4 +1,4 @@
-.HeroContact {
+.HeroAbout {
     position: relative;
     height: 24rem;
     background-size: cover;
@@ -6,13 +6,13 @@
     text-align: center;
 }
 
-.HeroContact .bannerBg {
+.HeroAbout .bannerBg {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(../public/pixacod-faces.png);
+    background-image: url(../public/pixacod-about.png);
     background-size: cover;
     background-position: 50%;
     -webkit-animation: fadeIn 1.2s;
@@ -21,30 +21,12 @@
     animation-timing-function: cubic-bezier(.25, .46, .45, .94);
 }
 
-.ContactContainer {
+.AboutContainer {
     clear: both;
     margin: 0 auto;
     max-width: 86%;
     padding: 0 50px;
     position: relative;
-}
-
-
-/*1100px*/
-
-@media only screen and (max-width: 1100px) {
-    .ContactContainer {
-        max-width: 100% !important;
-    }
-}
-
-
-/*650px*/
-
-@media only screen and (max-width: 650px) {
-    .ContactContainer {
-        padding: 0 20px;
-    }
 }
 
 .curve {
@@ -57,6 +39,24 @@
     box-shadow: 0 100px 0 #fff;
     -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
     animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+}
+
+
+/*1100px*/
+
+@media only screen and (max-width: 1100px) {
+    .AboutContainer {
+        max-width: 100% !important;
+    }
+}
+
+
+/*650px*/
+
+@media only screen and (max-width: 650px) {
+    .AboutContainer {
+        padding: 0 20px;
+    }
 }
 
 
@@ -74,7 +74,7 @@
 /*769px - 1200px*/
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    .HeroContact {
+    .HeroAbout {
         height: 23rem;
     }
     .curve {
@@ -88,7 +88,7 @@
 /*545px - 768px*/
 
 @media (min-width: 545px) and (max-width: 768px) {
-    .HeroContact {
+    .HeroAbout {
         height: 22rem;
     }
     .curve {
@@ -102,7 +102,7 @@
 /*544px*/
 
 @media only screen and (max-width: 544px) {
-    .HeroContact {
+    .HeroAbout {
         height: 21rem;
     }
     .curve {

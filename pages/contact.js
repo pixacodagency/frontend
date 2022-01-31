@@ -1,7 +1,5 @@
-import styles from '../styles/contact.module.css'
+import styles from '../styles/Contact.module.css'
 import Meta from '../components/Meta'
-import Image from 'next/image'
-import bannerPic from '../public/banner-curve.svg'
 
 const Contact = () => {
 	return ( 
