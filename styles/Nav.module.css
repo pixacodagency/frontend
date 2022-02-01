@@ -466,7 +466,6 @@ button .hamburgerText {
 .linkWithUnderline {
     color: var(--black);
     border-bottom: 2px solid var(--LinkUnderline);
-    font-size: 1rem;
     padding-top: var(--rowGapNormal)!important;
     font-weight: var(--fontWeightMedium);
     display: -webkit-inline-box;
@@ -603,5 +602,17 @@ button .hamburgerText {
     .myContainer {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+
+/*480*/
+
+@media only screen and (max-width: 480px) {
+    .linkWithUnderline {
+        font-size: 0.875rem !important;
+    }
+    .socialNav .navLink {
+        line-height: 1.2;
     }
 }

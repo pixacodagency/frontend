@@ -14,7 +14,7 @@ const PostList = ({ posts }) => {
 					<div className={`${styles.container} ${styles.large}`}>	
 						<article>
 							<h1>from the pixacod</h1>			  
-							<p>Articles, News, Tips, Help and Some Rambling.</p>
+							<p>Articles,News,Tips,Help and Some Rambling.</p>
 						</article>
 					</div>
 					<div className={styles.bannerBg}></div>

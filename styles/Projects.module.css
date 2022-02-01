@@ -1,32 +1,25 @@
-.HeroAbout {
+.HeroServices {
     position: relative;
-    height: 24rem;
+    padding: 250px 0 110px;
     background-size: cover;
     background-color: #080F1E;
-    text-align: center;
+    overflow: hidden;
+    margin-bottom: 75px;
 }
 
-.HeroAbout .bannerBg {
+.HeroServices .bannerBg {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(../public/pixacod-about.png);
+    background-image: url(../public/pixacod-services.png);
     background-size: cover;
     background-position: 50%;
     -webkit-animation: fadeIn 1.2s;
     animation: fadeIn 1.2s;
     -webkit-animation-timing-function: cubic-bezier(.25, .46, .45, .94);
     animation-timing-function: cubic-bezier(.25, .46, .45, .94);
-}
-
-.container {
-    clear: both;
-    margin: 0 auto;
-    max-width: 86%;
-    padding: 0 50px;
-    position: relative;
 }
 
 .curve {
@@ -41,22 +34,44 @@
     animation-timing-function: cubic-bezier(.39, .575, .565, 1);
 }
 
-
-/*1100px*/
-
-@media only screen and (max-width: 1100px) {
-    .AboutContainer {
-        max-width: 100% !important;
-    }
+.container {
+    clear: both;
+    margin: 0 auto;
+    max-width: 86%;
+    padding: 0 50px;
+    position: relative;
 }
 
+.HeroServices article {
+    width: calc(990/1200*100%);
+}
 
-/*650px*/
+.HeroServices .large {
+    z-index: 2;
+}
 
-@media only screen and (max-width: 650px) {
-    .AboutContainer {
-        padding: 0 20px;
-    }
+.HeroServices p {
+    color: var(--milky-way);
+    margin: 0;
+    max-width: calc(887/1200*100%);
+}
+
+.HeroServices h1 {
+    color: #8595e0;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    font-size: calc(72rem/16);
+    font-weight: var(--fontWeightMedium);
+    margin: 0;
+    letter-spacing: -.45px;
+    line-height: calc(94/72);
+}
+
+.large p {
+    font-size: calc(20rem/16);
+    letter-spacing: .2px;
+    line-height: calc(34/20);
+    margin-bottom: 34px;
 }
 
 
@@ -74,9 +89,6 @@
 /*769px - 1200px*/
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    .HeroAbout {
-        height: 23rem;
-    }
     .curve {
         height: 700px;
         -webkit-animation: curve-load-animation-lg .8s;
@@ -88,9 +100,6 @@
 /*545px - 768px*/
 
 @media (min-width: 545px) and (max-width: 768px) {
-    .HeroAbout {
-        height: 22rem;
-    }
     .curve {
         height: 500px;
         -webkit-animation: curve-load-animation-lg .8s;
@@ -102,12 +111,40 @@
 /*544px*/
 
 @media only screen and (max-width: 544px) {
-    .HeroAbout {
-        height: 21rem;
-    }
     .curve {
         height: 400px;
         -webkit-animation: curve-load-animation-lg .8s;
         animation: curve-load-animation-lg .8s;
+    }
+}
+
+
+/*1100px*/
+
+@media only screen and (max-width: 68.75em) {
+    .HerHeroServicesoBlog {
+        padding: 120px 0 80px;
+    }
+    .HeroServices article {
+        width: 100%;
+    }
+    .HeroServices h1 {
+        font-size: calc(32rem/16);
+        line-height: calc(42/32);
+    }
+    .container {
+        max-width: 100% !important;
+    }
+}
+
+
+/*650*/
+
+@media only screen and (max-width: 40.625em) {
+    .container {
+        padding: 0 20px;
+    }
+    .HeroServices {
+        padding: 100px 0 60px;
     }
 }

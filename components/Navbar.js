@@ -30,7 +30,7 @@ const Navbar = () => {
       </Link>
       <nav className={`${navStyles.navbar} ${navStyles.linkEffect}`}>
         <div className={navStyles.navbarItem}>
-           <Link href="/work">
+           <Link href="/projects">
              <a className={navStyles.navbarLinkItem}>
               <aside>
                 <span data-hover="Work">Work</span>
@@ -80,7 +80,7 @@ const Navbar = () => {
           <div ref={sidebarRef} className={`${navStyles.sidebarWrapper} ${showSidebar ? navStyles.sidebarWrapperRwd : navStyles.sidebarWrapper}`}>
             <div className={`${navStyles.sidebarWrapperContainer} ${showSidebar ? navStyles.sidebarWrapperRwd : navStyles.navAnimated}`}>
               <nav  className={`${navStyles.sidebarNav} ${navStyles.linkEffect}`}>
-                <Link href="/work" >
+                <Link href="/projects" >
                     <a onClick={()=> setShowSidebar(false)} className={navStyles.navbarLinkItem}>
                     <aside>
                       <span data-hover="Our Work">Our Work</span>

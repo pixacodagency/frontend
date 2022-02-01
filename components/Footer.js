@@ -54,7 +54,7 @@ const Footer = () => {
               <Link href="/about"><a>About us</a></Link>
                 <ul className={footerStyles.subMenu}>
                   <li className={footerStyles.menuItem}>
-                    <Link href="/work"><a>Our Work</a></Link>
+                    <Link href="/projects"><a>Our Work</a></Link>
                   </li>
                   <li className={footerStyles.menuItem}>
                     <Link href="/about"><a>Our Team</a></Link>

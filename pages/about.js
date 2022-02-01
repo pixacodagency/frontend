@@ -6,9 +6,9 @@ const  about = () => {
       <div>
       <Meta title='About | Pixacod' />
       <section className={styles.HeroAbout}>	
-          <div className={styles.AboutContainer}></div>
-          <div className={styles.bannerBg}></div>	
-          <div className={styles.curve}></div>						
+        <div className={`${styles.container} ${styles.large}`}></div>
+        <div className={styles.bannerBg}></div>	
+        <div className={styles.curve}></div>						
       </section>
       </div>
 	 );

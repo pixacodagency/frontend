@@ -6,7 +6,9 @@ const Contact = () => {
 	 <>
 			<Meta title='Contact | Pixacod' />
 			<section className={styles.HeroContact}>	
-					<div className={styles.ContactContainer}></div>
+					<div className={styles.ContactContainer}>
+						
+					</div>
 					<div className={styles.bannerBg}></div>	
 					<div className={styles.curve}></div>						
 			</section>
