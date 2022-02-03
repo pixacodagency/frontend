@@ -53,7 +53,7 @@ p.heading4 {
 }
 
 .footer p .eyebrow {
-    color: #8595e0;
+    color: #5972f3;
 }
 
 .eyebrow {
@@ -257,7 +257,7 @@ ul.menuFooter>li>a {
 }
 
 .footerList>li>a {
-    color: #8595e0;
+    color: #5972f3;
     font-size: calc(12rem/14);
     display: block;
     letter-spacing: 2px;

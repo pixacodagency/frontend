@@ -1,19 +1,19 @@
 :root {
     --purple: #7c00ff;
-    --green: #4AFFD8;
-    --accent: #EC4F70;
-    --blue: #4461FB;
+    --green: #4affd8;
+    --accent: #ec4f70;
+    --blue: #4461fb;
     --grey: #eaeaea;
     --milky-way: #f8f8fb;
     --yellow: #fddb60;
     --white: #ffffff;
     --black: #000;
-    --primary-color: #080F1E;
+    --primary-color: #080f1e;
     --blue-light: #8595e0;
-    --midnight: #080F1E;
+    --midnight: #080f1e;
     --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --color-white-400: #99a0aa;
-    --color-turquoise-400: #4AFFD8;
+    --color-turquoise-400: #4affd8;
     --heading-one: 60px;
     --heading-two: 48px;
     --heading-three: 32px;
@@ -82,10 +82,10 @@
 }
 
 *,
- :active,
- :focus,
- :hover {
-    outline: 0!important;
+:active,
+:focus,
+:hover {
+    outline: 0 !important;
 }
 
 a:active,
@@ -97,8 +97,8 @@ a:hover {
 a {
     color: var(--green);
     text-decoration: none;
-    -moz-animation-direction: color .12s ease-in;
-    transition: color .12s ease-in;
+    -moz-animation-direction: color 0.12s ease-in;
+    transition: color 0.12s ease-in;
     font-weight: var(--medium);
 }
 
@@ -135,8 +135,8 @@ h6 {
 }
 
 h3 {
-    font-size: calc(var(--heading-three)*var(--scale));
-    letter-spacing: -.03125rem;
+    font-size: calc(var(--heading-three) * var(--scale));
+    letter-spacing: -0.03125rem;
 }
 
 header,
@@ -162,8 +162,8 @@ section {
 p,
 ul,
 ol {
-    letter-spacing: .5px;
-    line-height: calc(26/16);
+    letter-spacing: 0.5px;
+    line-height: calc(26 / 16);
     margin: 0 0 24px;
 }
 
@@ -190,9 +190,9 @@ address {
     font-size: 1rem;
 }
 
-[type=button],
-[type=reset],
-[type=submit],
+[type="button"],
+[type="reset"],
+[type="submit"],
 button {
     -webkit-appearance: button;
 }
