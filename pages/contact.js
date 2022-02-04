@@ -7,12 +7,30 @@ const Contact = () => {
       <Meta title="Contact | Pixacod" />
       <section className={styles.HeroContact}>
         <div className={`${styles.container} ${styles.ContactContainer}`}>
-          <article className={styles.large}>
-            <h1>Contact</h1>
-          </article>
+          <article className={styles.large}></article>
         </div>
         <div className={styles.bannerBg}></div>
         <div className={styles.curve}></div>
+      </section>
+      <section className={styles.WaysToConnect}>
+        <div className={styles.container}>
+          <div className={styles.CompanyInfoWrapper}>
+            <div className={styles.header}>
+              <h1>
+                <div>Let’s start a</div>
+                <div>project together.</div>
+              </h1>
+              <article>
+                <p>
+                  We've found that we deliver the greatest value to our clients
+                  when we establish ongoing relationships that allow us to
+                  materially contribute to their long‑term success.
+                </p>
+              </article>
+              <h2 className={styles.heading3}>Ways to connect</h2>
+            </div>
+          </div>
+        </div>
       </section>
       <section className={styles.CompanyInfo}>
         <div className={styles.container}>
@@ -26,7 +44,7 @@ const Contact = () => {
                 <ul className={styles.list}>
                   <li>PIXACOD</li>
                   <li>Hrvatskih branitelja 48</li>
-                  <li>72250 Vitez, Bosnia</li>
+                  <li>72250 Vitez, Bosnia and Herzegovina</li>
                 </ul>
               </div>
               <div className={styles.card}>

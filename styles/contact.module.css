@@ -49,7 +49,51 @@
     # block.WaysToConnect
 \*------------------------------------*/
 
-.WaysToConnect {}
+.WaysToConnect article {
+    padding-bottom: calc(100px * var(--scale));
+    max-width: calc(970px * var(--scale));
+}
+
+.WaysToConnect h1 {
+    color: var(--primary-color);
+    font-size: calc(6rem * var(--scale));
+    padding-top: calc(150px * var(--scale));
+    padding-bottom: calc(70px * var(--scale));
+    letter-spacing: -1px;
+    line-height: calc(94 / 72);
+    font-weight: var(--fontWeightMedium);
+}
+
+.WaysToConnect p {
+    font-size: calc(28rem / 16);
+    font-weight: var(--fontWeightRegular);
+    letter-spacing: 0.2px;
+    line-height: calc(36 / 28);
+}
+
+@media only screen and (max-width: 768px) {
+    .WaysToConnect h1 {
+        font-size: calc(4rem * var(--scale));
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .WaysToConnect article {
+        max-width: calc(900px * var(--scale));
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .WaysToConnect article {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .WaysToConnect h1 {
+        font-size: calc(5rem * var(--scale));
+    }
+}
 
 
 /*------------------------------------*\
@@ -57,11 +101,11 @@
 \*------------------------------------*/
 
 .CompanyInfoWrapper {
-    padding: 15vh 0 5vh 0;
+    padding: 0 0 5vh 0;
 }
 
 .CompanyInfoWrapper .header .heading3 {
-    color: #080f1e;
+    color: var(--blue2);
     font-size: calc(32rem / 16);
     font-weight: var(--fontWeightMedium);
     letter-spacing: -0.3px;
@@ -75,7 +119,7 @@
 }
 
 .CompanyInfo .card p {
-    color: #5972f3;
+    color: var(--primary-color);
     font-size: calc(20rem / 16);
     font-weight: var(--medium);
     letter-spacing: -0.6px;
