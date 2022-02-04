@@ -44,10 +44,6 @@
     animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.HeroAbout .large {
-    z-index: 2;
-}
-
 .HeroAbout h1 {
     color: #5972f3;
     margin-bottom: 10px;
@@ -146,10 +142,11 @@
 }
 
 .aboutWho .heading4 {
-    font-size: calc(32rem / 16);
-    font-weight: 600;
+    color: var(--midnight);
+    font-size: calc(24rem / 16);
+    font-weight: var (--fontWeightRegular);
     letter-spacing: -0.4px;
-    line-height: calc(42 / 32);
+    line-height: calc(36 / 24);
     margin: 0;
 }
 

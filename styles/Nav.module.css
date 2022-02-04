@@ -51,10 +51,10 @@
 .linkEffect a span {
     position: relative;
     display: block;
-    -webkit-transition: -webkit-transform .8s var(--transition);
-    transition: -webkit-transform .8s var(--transition);
-    transition: transform .8s var(--transition);
-    transition: transform .8s var(--transition), -webkit-transform .8s var(--transition);
+    -webkit-transition: -webkit-transform 0.8s var(--transition);
+    transition: -webkit-transform 0.8s var(--transition);
+    transition: transform 0.8s var(--transition);
+    transition: transform 0.8s var(--transition), -webkit-transform 0.8s var(--transition);
 }
 
 .linkEffect a span:before {
@@ -80,7 +80,7 @@
 .navbarItem {
     position: relative;
     display: block;
-    margin: .25rem 0;
+    margin: 0.25rem 0;
 }
 
 .menuDesktop {
@@ -90,7 +90,7 @@
 
 .menuDesktop .navbarItem {
     display: inline-block;
-    margin: 0 .25rem;
+    margin: 0 0.25rem;
 }
 
 .menuDesktop .navbarLinkItem,
@@ -105,11 +105,11 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-size: calc(1rem*var(--scale-nav-link));
+    font-size: calc(1rem * var(--scale-nav-link));
     padding: 0.25rem;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-    letter-spacing: .01875rem;
+    letter-spacing: 0.01875rem;
     font-weight: 500;
     /* vertical-align: middle; */
 }
@@ -122,11 +122,11 @@
     display: block;
     position: relative;
     overflow: hidden;
-    padding: 0 .01em 0 0;
+    padding: 0 0.01em 0 0;
 }
 
 .navbarLinkItem:hover span {
-    color: var(--blue-light);
+    color: var(--blue2);
 }
 
 .hamburgerRow {
@@ -154,9 +154,9 @@
     border-radius: 100px;
     will-change: transform;
     margin-left: 1.25rem;
-    -webkit-transition: -webkit-transform .6s;
-    transition: transform .6s;
-    transition: transform .6s, -webkit-transform .6s;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
 }
 
 .hamburgerButton span {
@@ -164,12 +164,12 @@
     display: block;
     width: 100%;
     height: 2px;
-    margin: .375rem 0;
+    margin: 0.375rem 0;
     top: 0;
     z-index: 1;
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .hamburgerButton:before {
@@ -181,28 +181,28 @@
     bottom: -28px;
     border-radius: 50%;
     opacity: 0;
-    -webkit-transform: scale(.7);
-    transform: scale(.7);
-    -webkit-transition: opacity .5s cubic-bezier(.65, .005, .35, .995), -webkit-transform .4s cubic-bezier(.65, .005, .35, .995);
-    transition: transform .4s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995), -webkit-transform .4s cubic-bezier(.65, .005, .35, .995);
-    background-color: #4461FB;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: opacity 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995), -webkit-transform 0.4s cubic-bezier(0.65, 0.005, 0.35, 0.995);
+    transition: transform 0.4s cubic-bezier(0.65, 0.005, 0.35, 0.995), opacity 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995), -webkit-transform 0.4s cubic-bezier(0.65, 0.005, 0.35, 0.995);
+    background-color: #4461fb;
 }
 
 .hamburgerButton:hover:before {
     -webkit-transform: scale(1);
     transform: scale(1);
-    opacity: .2;
+    opacity: 0.2;
 }
 
 .isOpen {
-    background-color: var(--blue)!important;
-    -webkit-transform: translateY(4px) rotate( 135deg);
-    transform: translateY(4px) rotate( 135deg);
+    background-color: var(--blue) !important;
+    -webkit-transform: translateY(4px) rotate(135deg);
+    transform: translateY(4px) rotate(135deg);
 }
 
 .isOpen:last-child {
-    -webkit-transform: translateY(-4px) rotate( 45deg);
-    transform: translateY(-4px) rotate( 45deg);
+    -webkit-transform: translateY(-4px) rotate(45deg);
+    transform: translateY(-4px) rotate(45deg);
 }
 
 .isClosed {
@@ -218,7 +218,7 @@
     overflow: unset;
     will-change: transform;
     margin-left: auto;
-    padding-right: var(--padding-mobile)!important;
+    padding-right: var(--padding-mobile) !important;
 }
 
 .buttonStyle {
@@ -230,7 +230,7 @@
     letter-spacing: inherit;
     font-size: var(--meta);
     font-weight: var(--bold);
-    letter-spacing: .0625rem;
+    letter-spacing: 0.0625rem;
     overflow: unset;
     border-radius: 4px;
     text-transform: uppercase;
@@ -254,7 +254,7 @@ button .hamburgerText {
 }
 
 .Opacity {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .NotOpacity {
@@ -265,8 +265,8 @@ button .hamburgerText {
     position: fixed;
     pointer-events: none;
     z-index: 1;
-    -webkit-transition: width .5s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995);
-    transition: width .5s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995);
+    -webkit-transition: width 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995), opacity 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995);
+    transition: width 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995), opacity 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995);
     width: 100%;
     height: 100%;
     left: 0;
@@ -278,8 +278,8 @@ button .hamburgerText {
 .sidebarVisable {
     position: fixed;
     z-index: 1;
-    -webkit-transition: width .5s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995);
-    transition: width .5s cubic-bezier(.65, .005, .35, .995), opacity .5s cubic-bezier(.65, .005, .35, .995);
+    -webkit-transition: width 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995), opacity 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995);
+    transition: width 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995), opacity 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995);
     width: 100%;
     height: 100%;
     left: 0;
@@ -296,8 +296,8 @@ button .hamburgerText {
     right: 0;
     overflow: hidden;
     will-change: transform;
-    -webkit-transition: .5s cubic-bezier(.65, .005, .35, .995);
-    transition: .5s cubic-bezier(.65, .005, .35, .995);
+    -webkit-transition: 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995);
+    transition: 0.5s cubic-bezier(0.65, 0.005, 0.35, 0.995);
 }
 
 .sidebarWrapperContainer {
@@ -320,8 +320,8 @@ button .hamburgerText {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
-    -webkit-transition: opacity .2s cubic-bezier(.75, .25, .25, .75), -webkit-transform .3s cubic-bezier(.75, .25, .25, .75);
-    transition: opacity .2s cubic-bezier(.75, .25, .25, .75), transform .3s cubic-bezier(.75, .25, .25, .75), -webkit-transform .3s cubic-bezier(.75, .25, .25, .75);
+    -webkit-transition: opacity 0.2s cubic-bezier(0.75, 0.25, 0.25, 0.75), -webkit-transform 0.3s cubic-bezier(0.75, 0.25, 0.25, 0.75);
+    transition: opacity 0.2s cubic-bezier(0.75, 0.25, 0.25, 0.75), transform 0.3s cubic-bezier(0.75, 0.25, 0.25, 0.75), -webkit-transform 0.3s cubic-bezier(0.75, 0.25, 0.25, 0.75);
 }
 
 .navAnimatedOpen {
@@ -331,11 +331,11 @@ button .hamburgerText {
 }
 
 .navBg {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     z-index: -1;
-    -webkit-transition: .6s;
-    transition: .6s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
     width: 100%;
     height: 100%;
     left: 0;
@@ -351,15 +351,15 @@ button .hamburgerText {
 
 .sidebarNav .navbarLinkItem {
     position: relative;
-    font-size: calc(var(--heading-three)*var(--scale));
+    font-size: calc(var(--heading-three) * var(--scale));
     color: var(--black) !important;
     padding: 0;
-    margin: 0 0 .5rem;
+    margin: 0 0 0.5rem;
     display: block;
 }
 
 .sidebarNav .navbarLinkItem:hover span {
-    color: var(--blue);
+    color: var(--blue2);
 }
 
 .moreLinks {
@@ -371,7 +371,7 @@ button .hamburgerText {
 }
 
 .moreLinks .navLink {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     margin: 0;
     display: table;
     color: inherit;
@@ -383,15 +383,15 @@ button .hamburgerText {
 }
 
 .badge {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: var(--fontWeightMedium);
     border-radius: 4px;
     display: inline-table;
     pointer-events: none;
     position: relative;
     line-height: 1.5;
-    padding: .125rem .375rem .1875rem;
-    letter-spacing: .0625rem;
+    padding: 0.125rem 0.375rem 0.1875rem;
+    letter-spacing: 0.0625rem;
     min-height: 26px;
     background: var(--green);
     color: var(--black);
@@ -421,11 +421,11 @@ button .hamburgerText {
 }
 
 .commanLabel {
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     font-weight: var(--fontWeightRegular);
-    font-size: .9375rem;
+    font-size: 0.9375rem;
     text-transform: none;
-    opacity: .7;
+    opacity: 0.7;
     margin-bottom: var(--rowGapMedium);
     position: relative;
     pointer-events: none;
@@ -458,7 +458,7 @@ button .hamburgerText {
 .left .h6 {
     color: var(--black);
     font-size: 0.875rem;
-    letter-spacing: -.3px;
+    letter-spacing: -0.3px;
     font-weight: var(--fontWeightRegular);
     margin-bottom: 0;
 }
@@ -466,7 +466,7 @@ button .hamburgerText {
 .linkWithUnderline {
     color: var(--black);
     border-bottom: 2px solid var(--LinkUnderline);
-    padding-top: var(--rowGapNormal)!important;
+    padding-top: var(--rowGapNormal) !important;
     font-weight: var(--fontWeightMedium);
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -486,9 +486,9 @@ button .hamburgerText {
     -ms-transform-origin: left bottom;
     transform-origin: left bottom;
     will-change: transform;
-    -webkit-transition: scaleX .8s cubic-bezier(.694, 0, .335, 1), color .8s cubic-bezier(.694, 0, .335, 1);
-    -o-transition: scaleX .8s cubic-bezier(.694, 0, .335, 1), color .8s cubic-bezier(.694, 0, .335, 1);
-    transition: scaleX .8s cubic-bezier(.694, 0, .335, 1), color .8s cubic-bezier(.694, 0, .335, 1);
+    -webkit-transition: scaleX 0.8s cubic-bezier(0.694, 0, 0.335, 1), color 0.8s cubic-bezier(0.694, 0, 0.335, 1);
+    -o-transition: scaleX 0.8s cubic-bezier(0.694, 0, 0.335, 1), color 0.8s cubic-bezier(0.694, 0, 0.335, 1);
+    transition: scaleX 0.8s cubic-bezier(0.694, 0, 0.335, 1), color 0.8s cubic-bezier(0.694, 0, 0.335, 1);
 }
 
 .linkWithUnderline:after {
@@ -502,11 +502,11 @@ button .hamburgerText {
     background-color: #000;
     z-index: 2;
     will-change: transform, color;
-    -webkit-transition: -webkit-transform .6s cubic-bezier(.694, 0, .335, 1);
-    transition: transform .6s;
-    -o-transition: transform .6s cubic-bezier(.694, 0, .335, 1);
-    transition: transform .6s, -webkit-transform .6s;
-    transition-timing-function: cubic-bezier(.694, 0, .335, 1);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.694, 0, 0.335, 1);
+    transition: transform 0.6s;
+    -o-transition: transform 0.6s cubic-bezier(0.694, 0, 0.335, 1);
+    transition: transform 0.6s, -webkit-transform 0.6s;
+    transition-timing-function: cubic-bezier(0.694, 0, 0.335, 1);
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     transform: scaleX(0);
@@ -547,7 +547,7 @@ button .hamburgerText {
 
 @media (min-width: 1080px) {
     .toggleButton {
-        padding-right: var(--padding-desktop)!important;
+        padding-right: var(--padding-desktop) !important;
     }
 }
 
@@ -556,7 +556,7 @@ button .hamburgerText {
 
 @media (min-width: 480px) and (max-width: 1079px) {}
 
-@media (min-width: 700px) and (max-width:776px) {
+@media (min-width: 700px) and (max-width: 776px) {
     .navbar {
         margin-left: 0;
     }
@@ -574,12 +574,12 @@ button .hamburgerText {
         padding: 5rem;
     }
     .sidebarNav .navbarLinkItem {
-        font-size: calc(var(--heading-two)*var(--scale));
+        font-size: calc(var(--heading-two) * var(--scale));
     }
     .sidebarWrapperRwd {
         width: 620px;
-        -webkit-transition: width .5s cubic-bezier(.4, 0, .1, 1);
-        transition: width .5s cubic-bezier(.4, 0, .1, 1);
+        -webkit-transition: width 0.5s cubic-bezier(0.4, 0, 0.1, 1);
+        transition: width 0.5s cubic-bezier(0.4, 0, 0.1, 1);
     }
 }
 

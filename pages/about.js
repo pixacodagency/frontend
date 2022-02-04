@@ -44,7 +44,7 @@ const about = () => {
             </div>
             <article>
               <p className={styles.heading4}>
-                Pixacod is a digital agency from Bosnia, established in 2017.
+                Pixacod is a digital agency from Bosnia, established in 2018.
                 Who are we? We are a team of digital experts who specializing in
                 Branding, Digital Marketing, UX/UI Design, Custom Development, &
                 eCommerce. <br></br>
